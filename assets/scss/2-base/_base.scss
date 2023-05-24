@@ -1,0 +1,43 @@
+@import '../1-abstracts/breakpoints';
+
+/* B O D Y */
+body {
+    // background: $body-bg;
+}
+
+/* C O N T A I N E R */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    // max-width: $container-max-width;
+
+    @include respond-to(xxl) {
+        width: 85%;
+    }
+
+    @include respond-to(lg) {
+        width: 90%;
+    }
+
+    @include respond-to(sm) {
+        width: 95%;
+    }
+}
+
+/* S C R O L L    B A R */
+// ::-webkit-scrollbar {
+//     width: $scrollbar-width;
+// }
+
+// ::-webkit-scrollbar-track {
+//     background: $scrollbar-track-color;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     border-radius: $scrollbar-thumb-radius;
+//     background-color: $scrollbar-thumb-color;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background: $scrollbar-thumb-hover-color;
+// }

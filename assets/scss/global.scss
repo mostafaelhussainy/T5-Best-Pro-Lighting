@@ -1,0 +1,23 @@
+/* I M P O R T E D   O N C E   G L O B A L Y */
+/* A B S T R A C T S */
+@import './1-abstracts/helper-classes';
+@import './1-abstracts/variables';
+
+/* B A S E */
+@import './2-base/animations';
+@import './2-base/base';
+@import './2-base/forms';
+@import './2-base/normalize';
+@import './2-base/typography';
+
+/* C O M P O N E N T S */
+@import './3-components/buttons';
+@import './3-components/flash';
+@import './3-components/footer';
+@import './3-components/header';
+@import './3-components/mini-cart';
+@import './3-components/product-card';
+@import './3-components/product-grid';
+
+/* V E N D O R S */
+@import './4-vendors/swiper-bundle.min';
