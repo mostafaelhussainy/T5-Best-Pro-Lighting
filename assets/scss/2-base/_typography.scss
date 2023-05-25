@@ -1,7 +1,149 @@
 /* H E A D E R S */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  color: #000000;
+}
+h1,
+h2,
+h3 {
+  font-family: $calson;
+  font-weight: 400;
+}
 
-/* P A R A G R A P H S */
+h1 {
+  font-size: 138px;
+  line-height: 138px;
+  letter-spacing: 8.28px;
+  text-transform: uppercase;
+  @include respond-to(md) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
 
-/* L I N K S */
+h2 {
+  font-size: 55px;
+  line-height: 65px;
+  @include respond-to(md) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 46px;
+  @include respond-to(md) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+h4 {
+  font-family: $poppins;
+  font-size: 24px;
+  line-height: 28px;
+}
+.h4--bold {
+  font-weight: 500;
+}
+.h4--light {
+  font-weight: 300;
+}
+.h4--uppercased {
+  font-weight: 600;
+}
+
+h5 {
+  font-family: $poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h6 {
+  font-family: $poppins;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* B O D Y */
+.Bodytext,
+.Bodytext--bold {
+  font-style: normal;
+  line-height: 28px;
+  color: #000000;
+}
+.Bodytext {
+  font-family: $poppins;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.Bodytext--bold {
+  font-family: $inter;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* S U B T I T L E S */
+.Subtitle {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+.Subtitle--Bold {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.Caption {
+  font-family: $poppins;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 28px;
+  color: #000000;
+}
 
 /* B U T T O N S */
+.CTA {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  @include respond-to(md) {
+    font-size: 14px;
+  }
+}
+
+.button--regular {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.tx--success {
+  color: $Success;
+}

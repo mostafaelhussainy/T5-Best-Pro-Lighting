@@ -1,4 +1,29 @@
 .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-icon-hover__effect {
+  transition: color 0.3s ease-in-out;
+  color: inherit;
+  display: block;
+  svg path {
+    transition: fill 0.3s ease-in-out;
+  }
+  &:hover {
+    color: #d4550c !important;
+    svg path {
+      fill: #d4550c;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }

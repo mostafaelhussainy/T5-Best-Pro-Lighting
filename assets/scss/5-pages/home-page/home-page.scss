@@ -1,1 +1,46 @@
 @import '../../helper.scss';
+/*  H E R O    S T Y L E S */
+#hero {
+  background-image: url('../../../images/home-page/hero__bg.png');
+  padding: 125px 0 275px;
+  @include respond-to(xxl) {
+    background-image: none;
+    text-align: center;
+    background-color: rgb(242, 245, 249);
+  }
+  h1,
+  h3 {
+    color: $Primary;
+  }
+  p {
+    max-width: 560px;
+    color: #191919;
+    margin-bottom: 40px;
+    @include respond-to(xxl) {
+      margin: 0 auto 40px;
+    }
+  }
+  .row {
+    column-gap: 17px;
+    @include respond-to(xxl) {
+      justify-content: center;
+    }
+  }
+}
+/************************************************************************/
+/*  O U R    P R O D U C T S    S T Y L E S */
+
+/************************************************************************/
+/*  W H A T    M A K E S    U S    D I F F E R E N C E    S T Y L E S */
+
+/************************************************************************/
+/*  B E S T    D E A L    S T Y L E S */
+
+/************************************************************************/
+/*  W H Y    U S    S T Y L E S */
+
+/************************************************************************/
+/*  A B O U T    U S    S T Y L E S */
+
+/************************************************************************/
+/*  W H A T    O U R    C U S T O M E R S    S A Y    S T Y L E S */

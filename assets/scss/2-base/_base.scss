@@ -9,7 +9,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    // max-width: $container-max-width;
+    max-width: $container-max-width;
 
     @include respond-to(xxl) {
         width: 85%;
@@ -25,19 +25,19 @@ body {
 }
 
 /* S C R O L L    B A R */
-// ::-webkit-scrollbar {
-//     width: $scrollbar-width;
-// }
+::-webkit-scrollbar {
+    width: $scrollbar-width;
+}
 
-// ::-webkit-scrollbar-track {
-//     background: $scrollbar-track-color;
-// }
+::-webkit-scrollbar-track {
+    background: $scrollbar-track-color;
+}
 
-// ::-webkit-scrollbar-thumb {
-//     border-radius: $scrollbar-thumb-radius;
-//     background-color: $scrollbar-thumb-color;
-// }
+::-webkit-scrollbar-thumb {
+    border-radius: $scrollbar-thumb-radius;
+    background-color: $scrollbar-thumb-color;
+}
 
-// ::-webkit-scrollbar-thumb:hover {
-//     background: $scrollbar-thumb-hover-color;
-// }
+::-webkit-scrollbar-thumb:hover {
+    background: $scrollbar-thumb-hover-color;
+}

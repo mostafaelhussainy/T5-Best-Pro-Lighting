@@ -1,7 +1,51 @@
-/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */ /* 
-.button-secondary {
-  @extend .button;
-  background-color: #4CAF50; // Green
-}  
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */ /* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+/*  H E R O    S T Y L E S */
+#hero {
+  background-image: url("../../../images/home-page/hero__bg.png");
+  padding: 125px 0 275px;
+}
+@media (max-width: 1440px) {
+  #hero {
+    background-image: none;
+    text-align: center;
+    background-color: rgb(242, 245, 249);
+  }
+}
+#hero h1,
+#hero h3 {
+  color: #253242;
+}
+#hero p {
+  max-width: 560px;
+  color: #191919;
+  margin-bottom: 40px;
+}
+@media (max-width: 1440px) {
+  #hero p {
+    margin: 0 auto 40px;
+  }
+}
+#hero .row {
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+}
+@media (max-width: 1440px) {
+  #hero .row {
+    justify-content: center;
+  }
+}
 
-*//*# sourceMappingURL=home-page.css.map */
+/************************************************************************/
+/*  O U R    P R O D U C T S    S T Y L E S */
+/************************************************************************/
+/*  W H A T    M A K E S    U S    D I F F E R E N C E    S T Y L E S */
+/************************************************************************/
+/*  B E S T    D E A L    S T Y L E S */
+/************************************************************************/
+/*  W H Y    U S    S T Y L E S */
+/************************************************************************/
+/*  A B O U T    U S    S T Y L E S */
+/************************************************************************/
+/*  W H A T    O U R    C U S T O M E R S    S A Y    S T Y L E S *//*# sourceMappingURL=home-page.css.map */
