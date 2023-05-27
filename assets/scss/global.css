@@ -65,6 +65,16 @@
 /* C O L O U R S */
 /* G L O B A L */
 /* S C R O L L    B A R */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
 /* B A S E */
 /* B O D Y */
 /* C O N T A I N E R */
@@ -109,7 +119,45 @@
 
 /* L A B E L */
 /* I N P U T */
+input {
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  padding-left: 20px;
+}
+input::-moz-placeholder {
+  color: #747474;
+}
+input::placeholder {
+  color: #747474;
+}
+
 /* S E L E C T */
+select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px 11px 11px 9.87px;
+  gap: 10px;
+  isolation: isolate;
+  width: 347px;
+  height: 50px;
+  /* White */
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -300,6 +348,10 @@ h6 {
   color: #85b040;
 }
 
+.Secondary {
+  color: #f26d21;
+}
+
 /* C O M P O N E N T S */
 button {
   cursor: pointer;
@@ -340,19 +392,93 @@ button {
 .button--ghost a {
   color: #253242 !important;
 }
-.button--ghost:hover {
-  background: #e7ebf1;
+footer .footer--pre {
+  background-color: #dfe8f2;
 }
-
-footer {
-  background-color: #253242;
+@media (max-width: 1200px) {
+  footer .footer--pre .container {
+    width: 100% !important;
+  }
+}
+footer .footer--pre ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+}
+@media (max-width: 1200px) {
+  footer .footer--pre ul {
+    flex-direction: column;
+  }
+}
+footer .footer--pre ul li {
+  display: block;
+  height: 202px;
+  width: 33%;
+  /* N E W S    L E T T E R */
+}
+@media (max-width: 1200px) {
+  footer .footer--pre ul li {
+    width: 100%;
+  }
+}
+footer .footer--pre ul li:nth-child(2) {
+  background: #d3dde7;
+}
+footer .footer--pre ul li:hover {
+  background-color: #bbcee3;
+}
+footer .footer--pre ul li a,
+footer .footer--pre ul li button {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+footer .footer--pre ul li a figure,
+footer .footer--pre ul li button figure {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+  row-gap: unset;
+}
+footer .footer--pre ul li a figure figcaption h4,
+footer .footer--pre ul li button figure figcaption h4 {
+  margin-bottom: 15px;
+}
+footer .footer--pre ul li #footer-newsletter-pop-up .pop-up {
+  max-width: 575px;
+}
+footer .footer--pre ul li #footer-newsletter-pop-up .pop-up .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+  width: 100%;
+}
+footer .footer--pre ul li #footer-newsletter-pop-up .pop-up .input-wrapper button {
+  padding: 15px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .footer--main {
+  background-color: #1b2530;
   padding: 60px 0;
 }
-footer *,
-footer .Subtitle {
+footer .footer--main *,
+footer .footer--main .Subtitle {
   color: #fff;
 }
-footer .container > ul {
+footer .footer--main .container > ul {
   padding-bottom: 40px;
   border-bottom: 1px solid #f26d21;
   display: grid;
@@ -364,22 +490,22 @@ footer .container > ul {
   justify-content: space-between;
 }
 @media (max-width: 1750px) {
-  footer .container > ul {
+  footer .footer--main .container > ul {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 20px;
          column-gap: 20px;
     row-gap: 50px;
   }
 }
-footer .container > ul li {
+footer .footer--main .container > ul li {
   max-width: 345px;
 }
-footer .container > ul li h4 {
+footer .footer--main .container > ul li h4 {
   position: relative;
   padding-bottom: 4px;
   margin-bottom: 16px;
 }
-footer .container > ul li h4:after {
+footer .footer--main .container > ul li h4:after {
   content: "";
   display: block;
   position: absolute;
@@ -389,20 +515,20 @@ footer .container > ul li h4:after {
   bottom: 0;
   left: 0;
 }
-footer .container > ul li ul {
+footer .footer--main .container > ul li ul {
   row-gap: 24px;
 }
-footer .container > div {
+footer .footer--main .container > div {
   padding-top: 30px;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
-  footer .container > div {
+  footer .footer--main .container > div {
     flex-direction: column-reverse;
     row-gap: 40px;
   }
 }
-footer .container > div .logo {
+footer .footer--main .container > div .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -412,20 +538,22 @@ footer .container > div .logo {
   row-gap: unset;
 }
 @media (max-width: 768px) {
-  footer .container > div .logo img {
+  footer .footer--main .container > div .logo img {
     display: none;
   }
 }
-footer .container > div .logo figcaption {
+footer .footer--main .container > div .logo figcaption {
   justify-content: center;
   align-items: flex-start;
 }
-footer .container > div .icons.col .row {
+footer .footer--main .container > div .icons.col .row {
   justify-content: flex-end;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   margin-bottom: 12px;
 }
 @media (max-width: 768px) {
-  footer .container > div .icons.col .row {
+  footer .footer--main .container > div .icons.col .row {
     justify-content: flex-start;
   }
 }
@@ -656,6 +784,85 @@ header #mainnav .container li a {
 }
 header #mainnav .container li a:hover {
   border-bottom: 3px solid #f26d21;
+}
+
+.pop-up-visible {
+  display: block !important;
+}
+
+.overlay-wrapper {
+  display: none;
+}
+.overlay-wrapper .pop-up-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 		width: 100% !important; */
+  width: 100vw !important; /* This change for /account/address  --> delete pop up */
+  height: 100vh;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.1882352941);
+}
+.overlay-wrapper .pop-up {
+  position: absolute;
+  top: 50%;
+  bottom: unset;
+  left: 50%;
+  right: unset;
+  z-index: 999;
+  position: fixed;
+  padding: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80%;
+  max-width: 653px;
+  background: #ffffff;
+  border-radius: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 20px;
+  overflow-y: auto;
+  max-height: 90%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .overlay-wrapper .pop-up {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .overlay-wrapper .pop-up {
+    row-gap: 10px;
+  }
+}
+.overlay-wrapper .pop-up ul {
+  overflow: hidden;
+}
+.overlay-wrapper .pop-up .pop-up__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+  width: 100%;
+}
+.overlay-wrapper .pop-up .pop-up__heading img {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 576px) {
+  .overlay-wrapper .pop-up button {
+    width: 100% !important;
+  }
 }
 
 /* V E N D O R S */

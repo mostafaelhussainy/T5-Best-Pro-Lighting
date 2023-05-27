@@ -1,5 +1,42 @@
 /* L A B E L */
 
 /* I N P U T */
-
+input {
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  padding-left: 20px;
+  &::placeholder {
+    color: #747474;
+  }
+}
 /* S E L E C T */
+select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px 11px 11px 9.87px;
+  gap: 10px;
+  isolation: isolate;
+
+  width: 347px;
+  height: 50px;
+
+  /* White */
+
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

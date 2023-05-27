@@ -78,3 +78,27 @@
   display: block;
   position: absolute;
 }
+
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+@mixin card-width($cards-num: 2, $row-gap: 0) {
+  @if $row-gap == 0 {
+    flex-basis: calc(100% / #{$cards-num});
+  } @else {
+    flex-basis: calc((100% - (#{$cards-num - 1}) * #{$row-gap}) / #{$cards-num});
+  }
+}
+
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+@mixin grid-layout($columns: 2, $gap: unset) {
+  display: grid;
+  grid-template-columns: repeat(#{$columns}, 1fr);
+  grid-gap: $gap;
+}

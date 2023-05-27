@@ -1,0 +1,62 @@
+.pop-up-visible {
+  display: block !important;
+}
+
+.overlay-wrapper {
+  display: none;
+
+  .pop-up-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* 		width: 100% !important; */
+    width: 100vw !important; /* This change for /account/address  --> delete pop up */
+    height: 100vh;
+    z-index: 998;
+    background-color: #00000030;
+  }
+
+  .pop-up {
+    @include abs;
+    z-index: 999;
+    position: fixed;
+    padding: 30px;
+    height: fit-content;
+    width: 80%;
+    max-width: 653px;
+    background: #ffffff;
+    border-radius: none;
+    @include flex(center, flex-start, column, 5px, 20px);
+    overflow-y: auto;
+    max-height: 90%;
+    transform: translate(-50%, -50%);
+
+    @include respond-to(md) {
+      padding: 20px;
+    }
+    @include respond-to(md) {
+      row-gap: 10px;
+    }
+    ul {
+      overflow: hidden;
+    }
+    .pop-up__heading {
+      @include flex(space-between, center, row);
+      width: 100%;
+
+      img {
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    @include respond-to(sm) {
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+}

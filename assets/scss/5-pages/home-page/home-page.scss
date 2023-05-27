@@ -3,6 +3,9 @@
 #hero {
   background-image: url('../../../images/home-page/hero__bg.png');
   padding: 125px 0 275px;
+  @include respond-to(md) {
+    padding: 125px 0 75px;
+  }
   @include respond-to(xxl) {
     background-image: none;
     text-align: center;
@@ -29,18 +32,394 @@
 }
 /************************************************************************/
 /*  O U R    P R O D U C T S    S T Y L E S */
+#our-products {
+  padding: 118px 0;
+  .container {
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .our-products__grid {
+      @include flex(flex-start, flex-start, row, 42px, 20px);
+      flex-wrap: wrap;
+      /* R E S P O N S I V E    S T A R T */
+      @include respond-to(sm) {
+        column-gap: 20px;
+      }
+      /* R E S P O N S I V E    E N D */
 
+      .our-products__product-card {
+        overflow: hidden;
+        @include card-width(5, 42px);
+        /* R E S P O N S I V E    S T A R T */
+        @include respond-to(xxxl) {
+          @include card-width(4, 42px);
+        }
+        @include respond-to(xxl) {
+          @include card-width(3, 42px);
+        }
+        @include respond-to(xl) {
+          @include card-width(2, 42px);
+        }
+        @include respond-to(sm) {
+          @include card-width(2, 20px);
+        }
+        /* R E S P O N S I V E    E N D */
+        height: 330px;
+        position: relative;
+        figure {
+          border: 1px solid #ecf1f7;
+          height: 274px;
+          @include flex(center, center, row);
+          img {
+            display: block;
+            max-width: 100%;
+          }
+        }
+        .text-wrapper {
+          background-color: $Background3;
+          height: 56px;
+          @include flex(center, center, row);
+          h6 {
+            text-align: center;
+            max-width: 90%;
+            white-space: nowrap;
+            /* R E S P O N S I V E    S T A R T */
+            @include respond-to(sm) {
+              font-size: 16px;
+              white-space: unset;
+              word-break: break-word;
+            }
+            /* R E S P O N S I V E    E N D */
+          }
+        }
+      }
+    }
+  }
+}
 /************************************************************************/
-/*  W H A T    M A K E S    U S    D I F F E R E N C E    S T Y L E S */
-
+/*  W H A T    M A K E S    U S    D I F F E R E N T E    S T Y L E S */
+#what-makes-us-different {
+  background: $Background3;
+  padding: 90px 0px;
+  .container {
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .what-makes-us-different__grid {
+      @include flex(flex-start, flex-start, row, unset, 40px);
+      flex-wrap: wrap;
+      .what-makes-us-different__card {
+        padding: 18px 33px;
+        background-image: url('../../../images/home-page/what-makes-us-differente__card__bg.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        @include card-width(6);
+        /* R E S P O N S I V E    S T A R T */
+        @include respond-to(xxxl) {
+          @include card-width(3);
+          &:nth-of-type(4) {
+            background-image: none;
+          }
+        }
+        @include respond-to(lg) {
+          @include card-width(2);
+          &:nth-of-type(4) {
+            background-image: url('../../../images/home-page/what-makes-us-differente__card__bg.png');
+          }
+          &:nth-of-type(odd) {
+            background-image: none;
+          }
+        }
+        /* R E S P O N S I V E    E N D */
+        &:first-of-type {
+          background-image: none;
+        }
+        img {
+          margin: 0 auto 30px;
+          display: block;
+          @include respond-to(md) {
+            margin-bottom: 15px;
+          }
+        }
+        figcaption p {
+          max-width: 185px;
+          text-align: center;
+          margin: 0 auto;
+          @include respond-to(md) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
 /************************************************************************/
 /*  B E S T    D E A L    S T Y L E S */
+#best-deal {
+  background-image: url('../../../images/home-page/best-deal__bg.jpg');
+  background-repeat: no-repeat;
+  min-height: 492px;
+  position: relative;
+  .block {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 746px;
+    background: #ffffff;
+    padding: 51px 46px 37px;
+    @include respond-to(lg) {
+      width: 90%;
+      right: unset;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h4 {
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    button {
+      margin-right: auto;
+      display: block;
+      padding: 18.5px 30px;
+    }
+  }
+}
 
 /************************************************************************/
 /*  W H Y    U S    S T Y L E S */
+#why-us {
+  @include grid-layout(3);
+  @include respond-to(sm) {
+    @include grid-layout(1);
+  }
+  .best-deal__why-us__card {
+    padding-top: 65px;
+    text-align: center;
+    min-height: 375px;
+    &:first-of-type {
+      background-image: url('../../../images/home-page/why-us__top-rated-bg.jpg');
+    }
+    &:nth-of-type(2) {
+      background-color: $Secondary;
+    }
+    &:last-of-type {
+      background-image: url('../../../images/home-page/why-us__best-product-bg.jpg');
+    }
+    img {
+      margin-bottom: 40px;
+    }
+    figcaption {
+      text-align: center;
+      p {
+        &:first-of-type {
+          margin-bottom: 9px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 30px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        &:last-of-type {
+          margin-bottom: 23px;
+          color: #ffffff;
+        }
+      }
+      button {
+        color: #ffff !important;
+        border-color: #ffff;
+      }
+    }
+  }
+}
 
 /************************************************************************/
 /*  A B O U T    U S    S T Y L E S */
-
+#about-us {
+  padding: 107px 0;
+  .container {
+    @include flex(flex-start, flex-start, row);
+    max-height: 550px;
+    overflow: hidden;
+    @include respond-to(xxl) {
+      max-height: unset;
+    }
+    .text-content {
+      background: #f4f7fa;
+      padding: 90px 85px 60px;
+      max-height: 550px;
+      @include respond-to(xxl) {
+        max-height: unset;
+        padding: 45px;
+      }
+      @include respond-to(xxl) {
+        width: 100%;
+      }
+      h2 {
+        margin-bottom: 36px;
+        max-width: 388px;
+      }
+      p {
+        margin-bottom: 56px;
+        max-width: 555px;
+      }
+      button {
+        max-width: 160px;
+        white-space: break-spaces;
+      }
+    }
+    figure {
+      max-width: 50%;
+      @include respond-to(xxl) {
+        display: none;
+      }
+    }
+  }
+}
 /************************************************************************/
 /*  W H A T    O U R    C U S T O M E R S    S A Y    S T Y L E S */
+#what-our-customers-say {
+  overflow: hidden;
+  padding: 88px 0;
+  position: relative;
+  @include flex(flex-start, flex-start, row);
+  @include respond-to(xl) {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .text-content {
+    position: relative;
+    left: 10%;
+    p {
+      max-width: 100%;
+    }
+    @include respond-to(xxl) {
+      left: 7.5%;
+    }
+    @include respond-to(xl) {
+      min-height: unset;
+      left: 0%;
+      width: 100%;
+      max-width: 85%;
+      margin: 0 auto;
+    }
+    @include respond-to(lg) {
+      max-width: 90%;
+    }
+    @include respond-to(sm) {
+      max-width: 95%;
+    }
+    margin-right: 150px;
+    background: #fff;
+    z-index: 20;
+    min-height: 455px;
+    h2 {
+      max-width: 337px;
+      margin-bottom: 19px;
+    }
+    p {
+      width: 417px;
+      margin-bottom: 60px;
+    }
+    button {
+      margin-right: auto;
+      display: block;
+      padding: 18.5px 30px;
+    }
+    .customerSwiper__controllers {
+      @include flex(center, center, row, 9px);
+      position: absolute;
+      width: fit-content;
+      bottom: 130px;
+      right: 0;
+      @include respond-to(xl) {
+        display: none;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        &:after {
+          content: '';
+        }
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background: #f2f2f2;
+        pointer-events: auto !important;
+      }
+    }
+  }
+
+  .customerSwiper {
+    min-height: 455px;
+    padding-left: 75px;
+    overflow: hidden;
+    @include flex(center, center, row);
+    @include respond-to(xxl) {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    @include respond-to(xl) {
+      padding-left: 0;
+      overflow: visible;
+    }
+    .swiper-wrapper {
+      @include respond-to(xl) {
+        margin-bottom: 45px;
+      }
+      .swiper-slide {
+        background: #ffffff;
+        box-shadow: -1px 4px 30px 7px rgba(0, 67, 134, 0.14);
+        border-radius: 10px;
+        padding: 52px 30px 80px;
+        max-width: 442px;
+        @include respond-to(xl) {
+          width: fit-content !important;
+          overflow: hidden;
+          max-width: 50%;
+        }
+        @include respond-to(md) {
+          max-width: unset;
+          width: 100% !important;
+        }
+
+        img {
+          display: block;
+          margin-bottom: 50px;
+        }
+        p:first-of-type {
+          margin-bottom: 34px;
+        }
+      }
+    }
+    .swiper-pagination {
+      display: none;
+      @include respond-to(xl) {
+        display: flex;
+        justify-content: center;
+      }
+      .swiper-pagination-bullet {
+        border: 2px solid #f26d21;
+        background: #fff;
+        border-radius: 50%;
+        height: 12px;
+        max-width: 12px;
+        flex: 0 0 12px;
+        padding: 0;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: #f26d21;
+      }
+    }
+  }
+}

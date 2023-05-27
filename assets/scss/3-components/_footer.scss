@@ -1,66 +1,126 @@
 footer {
-  background-color: $Primary;
-  padding: 60px 0;
-  *,
-  .Subtitle {
-    color: #fff;
-  }
-  .container {
-    & > ul {
-      padding-bottom: 40px;
-      border-bottom: 1px solid #f26d21;
-      @include grid(repeat(4, 1fr), auto);
-      justify-content: space-between;
-      @include respond-to(xxxl) {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-        row-gap: 50px;
+  .footer--pre {
+    background-color: $Background2;
+    .container {
+      @include respond-to(xl) {
+        width: 100% !important;
+      }
+    }
+    ul {
+      @include flex(flex-start, flex-start, row);
+      @include respond-to(xl) {
+        flex-direction: column;
       }
       li {
-        max-width: 345px;
-        h4 {
-          position: relative;
-          padding-bottom: 4px;
-          margin-bottom: 16px;
-          &:after {
-            @include pseudo;
-            height: 2px;
-            width: 57px;
-            background-color: $Secondary;
-            bottom: 0;
-            left: 0;
+        display: block;
+        height: 202px;
+        width: 33%;
+        @include respond-to(xl) {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          background: #d3dde7;
+        }
+        &:hover {
+          background-color: #bbcee3;
+        }
+        a,
+        button {
+          display: block;
+          height: 100%;
+          width: 100%;
+          figure {
+            height: 100%;
+            @include flex(center, center, row, 17px);
+            figcaption {
+              h4 {
+                margin-bottom: 15px;
+              }
+            }
           }
         }
-        ul {
-          row-gap: 24px;
+        /* N E W S    L E T T E R */
+        #footer-newsletter-pop-up {
+          .pop-up {
+            max-width: 575px;
+            .input-wrapper {
+              @include flex(center, center, row);
+              width: 100%;
+              button {
+                padding: 15px 20px;
+                width: fit-content;
+              }
+            }
+          }
         }
       }
     }
-    & > div {
-      padding-top: 30px;
-      justify-content: space-between;
-      @include respond-to(md) {
-        flex-direction: column-reverse;
-        row-gap: 40px;
-      }
-      .logo {
-        @include flex(flex-start, center, row, 30px);
-        img {
-          @include respond-to(md) {
-            display: none;
+  }
+  .footer--main {
+    background-color: #1b2530;
+    padding: 60px 0;
+    *,
+    .Subtitle {
+      color: #fff;
+    }
+    .container {
+      & > ul {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #f26d21;
+        @include grid(repeat(4, 1fr), auto);
+        justify-content: space-between;
+        @include respond-to(xxxl) {
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 20px;
+          row-gap: 50px;
+        }
+        li {
+          max-width: 345px;
+          h4 {
+            position: relative;
+            padding-bottom: 4px;
+            margin-bottom: 16px;
+            &:after {
+              @include pseudo;
+              height: 2px;
+              width: 57px;
+              background-color: $Secondary;
+              bottom: 0;
+              left: 0;
+            }
+          }
+          ul {
+            row-gap: 24px;
           }
         }
-        figcaption {
-          justify-content: center;
-          align-items: flex-start;
-        }
       }
-      .icons.col {
-        .row {
-          justify-content: flex-end;
-          margin-bottom: 12px;
-          @include respond-to(md) {
-            justify-content: flex-start;
+      & > div {
+        padding-top: 30px;
+        justify-content: space-between;
+        @include respond-to(md) {
+          flex-direction: column-reverse;
+          row-gap: 40px;
+        }
+        .logo {
+          @include flex(flex-start, center, row, 30px);
+          img {
+            @include respond-to(md) {
+              display: none;
+            }
+          }
+          figcaption {
+            justify-content: center;
+            align-items: flex-start;
+          }
+        }
+        .icons.col {
+          .row {
+            justify-content: flex-end;
+            column-gap: 30px;
+            margin-bottom: 12px;
+            @include respond-to(md) {
+              justify-content: flex-start;
+            }
           }
         }
       }
