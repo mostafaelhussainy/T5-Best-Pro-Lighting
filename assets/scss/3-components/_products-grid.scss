@@ -1,0 +1,12 @@
+.products__grid {
+  @include grid-layout(4, 25px);
+  row-gap: 25px;
+
+  @include respond-to(xl) {
+    @include grid-layout(3, 25px);
+  }
+  @include respond-to(md) {
+    @include grid-layout(2, 15px);
+    row-gap: 15px;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../helper.scss';
+
+main .container {
+  @include flex(space-between, flex-start, row);
+
+  #product-gallery {
+    width: 50%;
+    max-width: 600px;
+  }
+}
