@@ -1,0 +1,24 @@
+#bread-crumb {
+  margin-bottom: 30px;
+  .container {
+    @include flex(flex-start, center, row, 33.5px);
+    padding: 50px 0;
+    border-bottom: 1px solid #ecedee;
+    @include respond-to(md) {
+      column-gap: 9px;
+      border-top: 1px solid #ecedee;
+      padding: 15px 0;
+    }
+    a {
+      h5 {
+        color: #919191;
+        @include respond-to(sm) {
+          font-size: 16px;
+        }
+      }
+      .active {
+        color: $Secondary;
+      }
+    }
+  }
+}

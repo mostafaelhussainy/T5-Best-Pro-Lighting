@@ -262,14 +262,18 @@
 /*  W H Y    U S    S T Y L E S */
 #why-us {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 @media (max-width: 576px) {
   #why-us {
     display: grid;
+    justify-content: space-between;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
   }
 }
 #why-us .best-deal__why-us__card {

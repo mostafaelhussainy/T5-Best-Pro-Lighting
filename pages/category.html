@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Pro Lighting</title>
-    <link rel="stylesheet" href="./assets/scss/global.css" />
-    <link rel="stylesheet" href="./assets/scss/5-pages/home-page/home-page.css" />
+    <link rel="stylesheet" href="../assets/scss/global.css" />
+    <link rel="stylesheet" href="../assets/scss/5-pages/category/category.css" />
   </head>
   <body>
     <!-- H E A D E R    S T A R T -->
     <header>
       <section id="shipping-announcement">
         <div class="container">
-          <img src="./assets/icons/header__truck.svg" alt="" />
+          <img src="../assets/icons/header__truck.svg" alt="" />
           <p class="Bodytext">Free shipping for US orders over $75</p>
         </div>
       </section>
@@ -26,7 +26,7 @@
           <nav>
             <ul>
               <li>
-                <a href="./pages/account.html" class="Bodytext text-icon-hover__effect"> My Account </a>
+                <a href="../pages/account.html" class="Bodytext text-icon-hover__effect"> My Account </a>
               </li>
               <li>
                 <a href="" class="Bodytext text-icon-hover__effect">
@@ -42,7 +42,7 @@
                 </a>
               </li>
               <li>
-                <a href="./pages/cart.html" class="Bodytext text-icon-hover__effect">
+                <a href="../pages/cart.html" class="Bodytext text-icon-hover__effect">
                   <?xml version="1.0" encoding="utf-8"?>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_9_382)">
@@ -85,9 +85,11 @@
       </section>
       <section id="logo">
         <div class="container">
-          <figure>
-            <img src="./assets/images/header/header__logo.png" alt="" />
-          </figure>
+          <a href="/">
+            <figure>
+              <img src="../assets/images/header/header__logo.png" alt="" />
+            </figure>
+          </a>
           <ul class="subnav__mobile">
             <p class="Bodytext tx--success">Toll Free: <span class="Bodytext">1 (888) 882-4823</span></p>
             <li>
@@ -178,19 +180,19 @@
           <nav class="subnav__desktop">
             <ul>
               <li>
-                <a href="./pages/about-us.html" class="Bodytext text-icon-hover__effect">About Us</a>
+                <a href="../pages/about-us.html" class="Bodytext text-icon-hover__effect">About Us</a>
               </li>
               <li>
-                <a href="./pages/contact-us.html" class="Bodytext text-icon-hover__effect">Contact Us</a>
+                <a href="../pages/contact-us.html" class="Bodytext text-icon-hover__effect">Contact Us</a>
               </li>
               <li>
-                <a href="./pages/our-warranty.html" class="Bodytext text-icon-hover__effect">Our Warranty</a>
+                <a href="../pages/our-warranty.html" class="Bodytext text-icon-hover__effect">Our Warranty</a>
               </li>
               <li>
-                <a href="./pages/blogs.html" class="Bodytext text-icon-hover__effect">Our Blog</a>
+                <a href="../pages/blogs.html" class="Bodytext text-icon-hover__effect">Our Blog</a>
               </li>
               <li>
-                <a href="./pages/gallery.html" class="Bodytext text-icon-hover__effect">Gallery</a>
+                <a href="../pages/gallery.html" class="Bodytext text-icon-hover__effect">Gallery</a>
               </li>
             </ul>
             <p class="Bodytext tx--success">Toll Free: <span class="Bodytext">1 (888) 882-4823</span></p>
@@ -305,326 +307,302 @@
     </header>
     <!-- H E A D E R    E N D -->
 
-    <!-- H E R O    S T A R T -->
-    <section id="hero">
+    <!-- B R E A D    C R U M B    S T A R T -->
+    <section id="bread-crumb">
       <div class="container">
-        <h3>Illuminate Your</h3>
-        <h1>Garden</h1>
-        <p class="Bodytext">
-          Contractor Grade Landscape Light, manufacturer direct with the lowest prices in the market
-        </p>
-        <div class="row">
-          <button class="button--secondary CTA">
-            <a href=""> Shop for transformers </a>
-          </button>
-          <button class="button--primary CTA">
-            <a href=""> Shop For Led Lighting </a>
-          </button>
-        </div>
+        <a href="/">
+          <h5 class="text-icon-hover__effect">HOME</h5>
+        </a>
+        <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
+        <a href="/">
+          <h5 class="active">LED Garden Lighting</h5>
+        </a>
       </div>
     </section>
-    <!-- H E R O    E N D -->
+    <!-- B R E A D    C R U M B    E N D -->
 
-    <!-- O U R    P R O D U C T S    S T A R T -->
-    <section id="our-products">
+    <!-- M A I N    L A Y O U T    S T A R T -->
+    <main>
       <div class="container">
-        <h2>Our Products</h2>
-        <div class="our-products__grid">
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_transformers.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">TRANSFORMERS</h6>
+        <!-- F I L T E R    M E N U S    S T A R T -->
+        <aside id="filter__menus">
+          <h4 class="h4--bold">Categories</h4>
+          <ul>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase active text-icon-hover__effect"> Transformers </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> Kits </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> LED Garden Lighting </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> Directional Lighting </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> Flood Lighting </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> Transformers </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> Path - Area Lighting </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> Step Deck Lights </a>
+            </li>
+            <li>
+              <a href="" class="Bodytext Bodytext--uppercase text-icon-hover__effect"> Well Lighting </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- F I L T E R    M E N U S    E N D -->
+        <!-- F I L T E R    O U T P U T    S T A R T -->
+        <section id="filter__output">
+          <!-- F I L T E R    O U T P U T    S U M M A R Y    S T A R T -->
+          <div class="filter__output__summary">
+            <div class="summary--main">
+              <span class="Bodytext">
+                Whether you plan to use outdoor directional lighting to bathe entire areas with illumination or simply
+                to highlight something special, with the help of our flood light selection, you’ll be able to utilize
+                low-voltage spotlights for useful landscape features.
+              </span>
+              <a id="read-more" class="Bodytext Secondary">Read More...</a>
             </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_LED_lighting.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">LED GARDEN LIGHTING</h6>
+            <div class="summary--hidden summary--hidden--active">
+              <h3>What is directional lighting?</h3>
+              <p class="Bodytext">
+                Directional lighting is a type of lighting fixture that highlights a particular area with a single beam
+                of light positioned in any direction. Unlike pathway lighting, directional lights are pointed to
+                accentuate particular objects, artworks, and other decorative pieces you wish to emphasize.
+              </p>
+              <h3>How to use landscape spotlights?</h3>
+              <p class="Bodytext">
+                There are numerous lighting tips and ideas you can find online or even from your neighborhood that you
+                can apply to yours. The great thing about landscape spotlights is that you’ll always have ways to use
+                them, as they are highly versatile and effortlessly blends in with any theme. If you need help knowing
+                where to start, here are some recommended tips for using landscape spotlights. Choose what you want to
+                highlight: Are there any specific features or decorative objects you want to emphasize on your property?
+                Landscape spotlights do an excellent job of highlighting these areas to instantly make your property
+                more visually pleasing. What type of spotlights do you prefer? Different spotlight types also include
+                LED, incandescent, solar, and halogen options. There are pros and cons for each kind, however, we highly
+                recommend LED options for lifespan, energy efficiency, and durability. Where would you place them?
+                Placement is another factor that you should be considering since there are models specifically designed
+                for indoor use and some for outdoor applications. Determining these questions first will help you make
+                the most out of your directional outdoor lighting.
+              </p>
+              <h3>Benefits of Outdoor Directional Lights</h3>
+              <p class="Bodytext">
+                Outdoor directional lights benefit homeowners with their numerous functionality and decorative
+                potential. Here are some of the most common advantages of incorporating outdoor directional lights into
+                your landscape. Highlighting features - Give your decorative pieces their well-deserved attention by
+                highlighting them using outdoor directional lights. There are numerous ways in which a subtle beam could
+                make so much difference in your outdoor space. Added security - While safety and security are not
+                necessarily the primary function of bullet landscape lights, they can still contribute to adding
+                visibility to low-light areas for added protection. Energy efficiency - LED Spotlights work
+                spectacularly well outdoors and produce light with substantially less energy than other options.
+                Low-voltage spotlights would save you from a ton of costs in the long run.
+              </p>
+              <h3>Are LED spotlights worth it?</h3>
+              <p class="Bodytext">
+                When it comes to lighting output, lifespan, and durability, LED Spotlights will never disappoint you.
+                They are a worthwhile investment for homeowners looking to take their landscape lighting system to
+                another level without breaking the bank. We highly recommend you check out our variety of selections
+                here at Best Pro Lighting today!
+              </p>
+              <h3>Where to Buy Directional Lighting?</h3>
+              <span class="Bodytext">
+                Let our exclusive directional outdoor lighting selection help you encompass all the elements of your
+                beautiful backyard with some state-of-the-art, low-voltage landscape lighting spotlights made from
+                heavy-duty cast aluminum with a powder-coated finish in Black or Rust. We even have excellent customer
+                reviews to back it all up. It’ll soon become one of the most advantageous forms of LED Directional Light
+                upgrades you’ve ever made.
+              </span>
+              <a id="read-less" class="Bodytext Secondary">Read Less</a>
             </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__bulb_01.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">DIRECTIONAL LIGHTING</h6>
+          </div>
+          <!-- F I L T E R    O U T P U T    S U M M A R Y    E N D -->
+          <!-- F I L T E R    O U T P U T    C O N T R O L S    S T A R T -->
+          <div class="filter__output__controls">
+            <span class="filter__output__products-num">
+              <p class="Bodytext">1 - 25 of 25 items</p>
+            </span>
+            <div class="dropdown-parent">
+              <span class="filter__output__sorting-options Bodytext">
+                Sort by:
+                <button class="dropdown-btn" data-dropdown="category__sorting">
+                  <a class="Bodytext">Default</a>
+                  <img src="../assets/icons/category__filter.svg" id="icon-category__sorting" />
+                </button>
+              </span>
+              <ul class="dropdown-wrapper" id="dropdown-category__sorting">
+                <li>
+                  <a href="" class="Bodytext"> Default </a>
+                </li>
+                <li>
+                  <a href="" class="Bodytext"> Price high to low </a>
+                </li>
+                <li>
+                  <a href="" class="Bodytext"> Price low to high </a>
+                </li>
+                <li>
+                  <a href="" class="Bodytext"> Name a to z </a>
+                </li>
+                <li>
+                  <a href="" class="Bodytext"> Name z to a </a>
+                </li>
+              </ul>
             </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_path_area.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">PATH - AREA LIGHTING</h6>
-            </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_step_deck.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">STEP DECK LIGHTS</h6>
-            </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__LV200.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">WELL LIGHTING</h6>
-            </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_pond_lighting.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">POND LIGHTING</h6>
-            </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_led_bulbs.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">LED BULBS</h6>
-            </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_low_voltage.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">LOW VOLTAGE LIGHT BULBS</h6>
-            </div>
-          </a>
-          <a href="#" class="our-products__product-card">
-            <figure>
-              <img src="./assets/images/home-page/our-products__cat_accessories.png" alt="transformers" />
-            </figure>
-            <div class="text-wrapper">
-              <h6 class="text-icon-hover__effect">ACCESSORIES</h6>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- O U R    P R O D U C T S    E N D -->
+          </div>
 
-    <!-- W H A T    M A K E S    U S    D I F F E R E N T E    S T A R T -->
-    <section id="what-makes-us-different">
-      <div class="container">
-        <h2>What Makes Us Different</h2>
-        <div class="what-makes-us-different__grid">
-          <figure class="what-makes-us-different__card">
-            <img src="./assets/images/home-page/what-makes-us-differente__low-price.png" alt="low price hand" />
-            <figcaption>
-              <p class="Bodytext">Lowest Prices Guaranteed whether you buy 1 or 100</p>
-            </figcaption>
-          </figure>
-          <figure class="what-makes-us-different__card">
-            <img src="./assets/images/home-page/what-makes-us-differente__throph.png" alt="low price hand" />
-            <figcaption>
-              <p class="Bodytext">Contractor Grade Reliability and Durability</p>
-            </figcaption>
-          </figure>
-          <figure class="what-makes-us-different__card">
-            <img src="./assets/images/home-page/what-makes-us-differente__shipping.png" alt="low price hand" />
-            <figcaption>
-              <p class="Bodytext">Same day shipping on all orders</p>
-            </figcaption>
-          </figure>
-          <figure class="what-makes-us-different__card">
-            <img src="./assets/images/home-page/what-makes-us-differente__lifetime.png" alt="low price hand" />
-            <figcaption>
-              <p class="Bodytext">A Lifetime warranty on all stainless steel transformers</p>
-            </figcaption>
-          </figure>
-          <figure class="what-makes-us-different__card">
-            <img src="./assets/images/home-page/what-makes-us-differente__bulb.png" alt="low price hand" />
-            <figcaption>
-              <p class="Bodytext">Top quality fixtures at discounted prices</p>
-            </figcaption>
-          </figure>
-          <figure class="what-makes-us-different__card">
-            <img src="./assets/images/home-page/what-makes-us-differente__warranty.png" alt="low price hand" />
-            <figcaption>
-              <p class="Bodytext">5 Years Warranty on all low voltage landscape lighting</p>
-            </figcaption>
-          </figure>
-        </div>
+          <!-- F I L T E R    O U T P U T    C O N T R O L S    E N D -->
+          <!-- F I L T E R    O U T P U T    P R O D U C T S    S T A R T -->
+          <div class="filter__output__products">
+            <figure class="product__card">
+              <a href="./product.html">
+                <div class="product__card__img-wrapper">
+                  <img src="../assets/images/category/category__product--1.png" alt="product image" />
+                  <button class="add-product-to-wishlist text-icon-hover__effect">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.133 4.31705C21.013 5.19805 21.452 6.34805 21.452 7.50105C21.452 8.65405 21.012 9.80405 20.133 10.683L12 18.816L3.86701 10.683C2.98801 9.80405 2.54901 8.65405 2.54901 7.50005C2.54901 6.34605 2.98801 5.19605 3.86701 4.31705C4.74601 3.43805 5.89601 2.99905 7.05001 2.99905C8.20401 2.99905 9.35401 3.43805 10.233 4.31705L11.293 5.37705C11.684 5.76805 12.317 5.76805 12.707 5.37705L13.769 4.31505C14.648 3.43605 15.798 2.99705 16.951 2.99805C18.104 2.99905 19.254 3.43805 20.133 4.31705ZM21.547 2.90305C20.278 1.63405 18.613 0.999048 16.951 0.998048C15.289 0.997048 13.624 1.63205 12.354 2.90105L12 3.25605L11.647 2.90305C10.378 1.63405 8.71201 0.999048 7.05001 0.999048C5.38801 0.999048 3.72201 1.63405 2.45301 2.90305C1.18401 4.17205 0.549011 5.83805 0.549011 7.50005C0.549011 9.16205 1.18401 10.828 2.45301 12.097L11.293 20.937C11.684 21.328 12.317 21.328 12.707 20.937L21.547 12.097C22.816 10.828 23.451 9.16305 23.452 7.50105C23.453 5.83905 22.818 4.17405 21.547 2.90305Z"
+                        fill="#B7B7B7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="Subtitle Subtitle--Bold product__card__badge__LED">LED incl.</span>
+                  <div class="product__card__badge">
+                    <span class="product__card__badge__sale">Sale</span>
+                  </div>
+                </div>
+              </a>
+              <figcaption>
+                <a href="./product.html">
+                  <h6 class="text-icon-hover__effect">Integrated 20W LED Low Voltage Flood Light</h6>
+                </a>
+                <img src="../assets/icons/category__product__rate.svg" alt="product rate" />
+                <h4 class="h4--bold Secondary">$29.99</h4>
+                <div class="controls">
+                  <a href="./product.html" class="Subtitle Subtitle--Caption">MORE</a>
+                  <button class="Subtitle Subtitle--Caption button--primary">ADD TO CART</button>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="product__card">
+              <a href="./product.html">
+                <div class="product__card__img-wrapper">
+                  <img src="../assets/images/category/category__product--2.png" alt="product image" />
+                  <button class="add-product-to-wishlist text-icon-hover__effect">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.133 4.31705C21.013 5.19805 21.452 6.34805 21.452 7.50105C21.452 8.65405 21.012 9.80405 20.133 10.683L12 18.816L3.86701 10.683C2.98801 9.80405 2.54901 8.65405 2.54901 7.50005C2.54901 6.34605 2.98801 5.19605 3.86701 4.31705C4.74601 3.43805 5.89601 2.99905 7.05001 2.99905C8.20401 2.99905 9.35401 3.43805 10.233 4.31705L11.293 5.37705C11.684 5.76805 12.317 5.76805 12.707 5.37705L13.769 4.31505C14.648 3.43605 15.798 2.99705 16.951 2.99805C18.104 2.99905 19.254 3.43805 20.133 4.31705ZM21.547 2.90305C20.278 1.63405 18.613 0.999048 16.951 0.998048C15.289 0.997048 13.624 1.63205 12.354 2.90105L12 3.25605L11.647 2.90305C10.378 1.63405 8.71201 0.999048 7.05001 0.999048C5.38801 0.999048 3.72201 1.63405 2.45301 2.90305C1.18401 4.17205 0.549011 5.83805 0.549011 7.50005C0.549011 9.16205 1.18401 10.828 2.45301 12.097L11.293 20.937C11.684 21.328 12.317 21.328 12.707 20.937L21.547 12.097C22.816 10.828 23.451 9.16305 23.452 7.50105C23.453 5.83905 22.818 4.17405 21.547 2.90305Z"
+                        fill="#B7B7B7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="Subtitle Subtitle--Bold product__card__badge__LED">LED incl.</span>
+                  <div class="product__card__badge">
+                    <span class="product__card__badge__sale">Sale</span>
+                  </div>
+                </div>
+              </a>
+              <figcaption>
+                <a href="./product.html">
+                  <h6 class="text-icon-hover__effect">Integrated 20W LED Low Voltage Flood Light</h6>
+                </a>
+                <img src="../assets/icons/category__product__rate.svg" alt="product rate" />
+                <h4 class="h4--bold Secondary">$29.99</h4>
+                <div class="controls">
+                  <a href="./product.html" class="Subtitle Subtitle--Caption">MORE</a>
+                  <button class="Subtitle Subtitle--Caption button--primary">ADD TO CART</button>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="product__card">
+              <a href="./product.html">
+                <div class="product__card__img-wrapper">
+                  <img src="../assets/images/category/category__product--3.png" alt="product image" />
+                  <button class="add-product-to-wishlist text-icon-hover__effect">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.133 4.31705C21.013 5.19805 21.452 6.34805 21.452 7.50105C21.452 8.65405 21.012 9.80405 20.133 10.683L12 18.816L3.86701 10.683C2.98801 9.80405 2.54901 8.65405 2.54901 7.50005C2.54901 6.34605 2.98801 5.19605 3.86701 4.31705C4.74601 3.43805 5.89601 2.99905 7.05001 2.99905C8.20401 2.99905 9.35401 3.43805 10.233 4.31705L11.293 5.37705C11.684 5.76805 12.317 5.76805 12.707 5.37705L13.769 4.31505C14.648 3.43605 15.798 2.99705 16.951 2.99805C18.104 2.99905 19.254 3.43805 20.133 4.31705ZM21.547 2.90305C20.278 1.63405 18.613 0.999048 16.951 0.998048C15.289 0.997048 13.624 1.63205 12.354 2.90105L12 3.25605L11.647 2.90305C10.378 1.63405 8.71201 0.999048 7.05001 0.999048C5.38801 0.999048 3.72201 1.63405 2.45301 2.90305C1.18401 4.17205 0.549011 5.83805 0.549011 7.50005C0.549011 9.16205 1.18401 10.828 2.45301 12.097L11.293 20.937C11.684 21.328 12.317 21.328 12.707 20.937L21.547 12.097C22.816 10.828 23.451 9.16305 23.452 7.50105C23.453 5.83905 22.818 4.17405 21.547 2.90305Z"
+                        fill="#B7B7B7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="Subtitle Subtitle--Bold product__card__badge__LED">LED incl.</span>
+                  <div class="product__card__badge">
+                    <span class="product__card__badge__sale">Sale</span>
+                  </div>
+                </div>
+              </a>
+              <figcaption>
+                <a href="./product.html">
+                  <h6 class="text-icon-hover__effect">Integrated 20W LED Low Voltage Flood Light</h6>
+                </a>
+                <img src="../assets/icons/category__product__rate.svg" alt="product rate" />
+                <h4 class="h4--bold Secondary">$29.99</h4>
+                <div class="controls">
+                  <a href="./product.html" class="Subtitle Subtitle--Caption">MORE</a>
+                  <button class="Subtitle Subtitle--Caption button--primary">ADD TO CART</button>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="product__card">
+              <a href="./product.html">
+                <div class="product__card__img-wrapper">
+                  <img src="../assets/images/category/category__product--4.png" alt="product image" />
+                  <button class="add-product-to-wishlist text-icon-hover__effect">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.133 4.31705C21.013 5.19805 21.452 6.34805 21.452 7.50105C21.452 8.65405 21.012 9.80405 20.133 10.683L12 18.816L3.86701 10.683C2.98801 9.80405 2.54901 8.65405 2.54901 7.50005C2.54901 6.34605 2.98801 5.19605 3.86701 4.31705C4.74601 3.43805 5.89601 2.99905 7.05001 2.99905C8.20401 2.99905 9.35401 3.43805 10.233 4.31705L11.293 5.37705C11.684 5.76805 12.317 5.76805 12.707 5.37705L13.769 4.31505C14.648 3.43605 15.798 2.99705 16.951 2.99805C18.104 2.99905 19.254 3.43805 20.133 4.31705ZM21.547 2.90305C20.278 1.63405 18.613 0.999048 16.951 0.998048C15.289 0.997048 13.624 1.63205 12.354 2.90105L12 3.25605L11.647 2.90305C10.378 1.63405 8.71201 0.999048 7.05001 0.999048C5.38801 0.999048 3.72201 1.63405 2.45301 2.90305C1.18401 4.17205 0.549011 5.83805 0.549011 7.50005C0.549011 9.16205 1.18401 10.828 2.45301 12.097L11.293 20.937C11.684 21.328 12.317 21.328 12.707 20.937L21.547 12.097C22.816 10.828 23.451 9.16305 23.452 7.50105C23.453 5.83905 22.818 4.17405 21.547 2.90305Z"
+                        fill="#B7B7B7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="Subtitle Subtitle--Bold product__card__badge__LED">LED incl.</span>
+                  <div class="product__card__badge">
+                    <span class="product__card__badge__sale">Sale</span>
+                  </div>
+                </div>
+              </a>
+              <figcaption>
+                <a href="./product.html">
+                  <h6 class="text-icon-hover__effect">Integrated 20W LED Low Voltage Flood Light</h6>
+                </a>
+                <img src="../assets/icons/category__product__rate.svg" alt="product rate" />
+                <h4 class="h4--bold Secondary">$29.99</h4>
+                <div class="controls">
+                  <a href="./product.html" class="Subtitle Subtitle--Caption">MORE</a>
+                  <button class="Subtitle Subtitle--Caption button--primary">ADD TO CART</button>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- F I L T E R    O U T P U T    P R O D U C T S    E N D -->
+        </section>
+        <!-- F I L T E R    O U T P U T    E N D -->
       </div>
-    </section>
-    <!-- W H A T    M A K E S    U S    D I F F E R E N T E    E N D -->
+    </main>
+    <!-- M A I N    L A Y O U T    E N D -->
 
-    <!-- B E S T    D E A L    S T A R T -->
-    <section id="best-deal">
-      <div class="block">
-        <h4 class="h4--light">WE OFFER THE BEST DEAL ON</h4>
-        <h2>Low Voltage Landscape Lighting</h2>
-        <p class="Bodytext">With our long-lasting, energy-efficient LED bulbs and variety of LED light</p>
-        <button class="button--secondary button--regular">VIEW ALL</button>
-      </div>
-    </section>
-    <!-- B E S T    D E A L    E N D -->
-    <!-- W H Y    U S    S T A R T -->
-    <section id="why-us">
-      <figure class="best-deal__why-us__card">
-        <img src="./assets/images/home-page/best-deal__rate.png" alt="5 stars rate" />
-        <figcaption>
-          <p>Top-rated</p>
-          <p class="Bodytext">Google Customer Reviews</p>
-        </figcaption>
-      </figure>
-      <figure class="best-deal__why-us__card">
-        <img src="./assets/images/home-page/best-deal__24hours.png" alt="24 hours" />
-        <figcaption>
-          <p>Best service</p>
-          <p class="Bodytext">In The Industry</p>
-          <button class="button--ghost">READ OUR REVIEWS</button>
-        </figcaption>
-      </figure>
-      <figure class="best-deal__why-us__card">
-        <img src="./assets/images/home-page/best-deal__bulb.png" alt="bulb" />
-        <figcaption>
-          <p>Best Product</p>
-          <p class="Bodytext">In The Market</p>
-        </figcaption>
-      </figure>
-    </section>
-    <!-- W H Y    U S    E N D -->
+    <!--  -->
 
-    <!-- A B O U T    U S    S T A R T -->
-    <section id="about-us">
-      <div class="container">
-        <div class="text-content">
-          <h2>About Best Pro Lighting</h2>
-          <p class="Bodytext">
-            Thank you for entering BestProLighting.Com website. We are a manufacturer and distributor of high quality
-            low voltage landscape lighting products at the lowest prices in the market.
-          </p>
-          <button class="button--primary button--regular">KNOW MORE</button>
-        </div>
-        <figure>
-          <img src="./assets/images/home-page/about-us__bg.jpg" alt="palm trees" />
-        </figure>
-      </div>
-    </section>
-    <!-- A B O U T    U S    E N D -->
-
-    <!-- W H A T    O U R    C U S T O M E R S    S A Y    S T A R T -->
-    <section id="what-our-customers-say">
-      <div class="text-content">
-        <h2>What Our Customers Say</h2>
-        <p class="Bodytext">
-          We are the customers #1 choice for landscape lighting. We have over 20 years of experience.
-        </p>
-        <button class="button--secondary button--regular">View More</button>
-        <div class="customerSwiper__controllers">
-          <div class="swiper-button-next text-icon-hover__effect">
-            <?xml version="1.0" encoding="utf-8"?>
-            <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.87109 16.4179C10.1391 16.6899 10.1391 17.1269 9.87109 17.3969C9.60309 17.6669 9.17009 17.6679 8.90209 17.3969L1.07209 9.48891C0.804094 9.21891 0.804094 8.78191 1.07209 8.50991L8.90209 0.601914C9.17009 0.331914 9.60309 0.331914 9.87109 0.601914C10.1391 0.871914 10.1391 1.31091 9.87109 1.58091L2.73009 8.99991L9.87109 16.4179Z"
-                fill="#253242"
-              />
-            </svg>
-          </div>
-          <div class="swiper-button-prev text-icon-hover__effect">
-            <?xml version="1.0" encoding="utf-8"?>
-            <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.22994 8.99994L1.08894 1.57994C0.820939 1.30994 0.820939 0.872938 1.08894 0.600938C1.35694 0.330938 1.78994 0.330938 2.05794 0.600938L9.88794 8.50894C10.1559 8.77994 10.1559 9.21794 9.88794 9.48794L2.05794 17.3959C1.78994 17.6669 1.35694 17.6659 1.08894 17.3959C0.820939 17.1259 0.820939 16.6889 1.08894 16.4169L8.22994 8.99994Z"
-                fill="#253242"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="swiper customerSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/icons/home-page__slider__quotations.svg" alt="quotation mark" />
-            <p class="Bodytext">
-              Thanks to Rony, Sam, and Janette I got my front yard landscaping lights back up and working. Appreciate
-              the prompt respo...
-            </p>
-            <p class="Bodytext">Aung</p>
-            <p class="Subtitle Secondary">Customer</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/icons/home-page__slider__quotations.svg" alt="quotation mark" />
-            <p class="Bodytext">
-              Thanks to Rony, Sam, and Janette I got my front yard landscaping lights back up and working. Appreciate
-              the prompt respo...
-            </p>
-            <p class="Bodytext">Aung</p>
-            <p class="Subtitle Secondary">Customer</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/icons/home-page__slider__quotations.svg" alt="quotation mark" />
-            <p class="Bodytext">
-              Thanks to Rony, Sam, and Janette I got my front yard landscaping lights back up and working. Appreciate
-              the prompt respo...
-            </p>
-            <p class="Bodytext">Aung</p>
-            <p class="Subtitle Secondary">Customer</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/icons/home-page__slider__quotations.svg" alt="quotation mark" />
-            <p class="Bodytext">
-              Thanks to Rony, Sam, and Janette I got my front yard landscaping lights back up and working. Appreciate
-              the prompt respo...
-            </p>
-            <p class="Bodytext">Aung</p>
-            <p class="Subtitle Secondary">Customer</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/icons/home-page__slider__quotations.svg" alt="quotation mark" />
-            <p class="Bodytext">
-              Thanks to Rony, Sam, and Janette I got my front yard landscaping lights back up and working. Appreciate
-              the prompt respo...
-            </p>
-            <p class="Bodytext">Aung</p>
-            <p class="Subtitle Secondary">Customer</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/icons/home-page__slider__quotations.svg" alt="quotation mark" />
-            <p class="Bodytext">
-              Thanks to Rony, Sam, and Janette I got my front yard landscaping lights back up and working. Appreciate
-              the prompt respo...
-            </p>
-            <p class="Bodytext">Aung</p>
-            <p class="Subtitle Secondary">Customer</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/icons/home-page__slider__quotations.svg" alt="quotation mark" />
-            <p class="Bodytext">
-              Thanks to Rony, Sam, and Janette I got my front yard landscaping lights back up and working. Appreciate
-              the prompt respo...
-            </p>
-            <p class="Bodytext">Aung</p>
-            <p class="Subtitle Secondary">Customer</p>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-    <!-- W H A T    O U R    C U S T O M E R S    S A Y    E N D -->
-
+    <!--  -->
     <!-- F O O T E R    S T A R T -->
     <footer>
       <div class="footer--pre">
         <div class="container">
           <ul>
             <li>
-              <a href="./pages/about-us">
+              <a href="../pages/about-us">
                 <figure>
-                  <img src="./assets/icons/footer__openning-hours.svg" alt="clock" />
+                  <img src="../assets/icons/footer__openning-hours.svg" alt="clock" />
                   <figcaption>
                     <h4 class="h4--bold">Opening Hours</h4>
                     <p class="Bodytext">MON - FRI 7:30am - 3:30pm PST</p>
@@ -633,9 +611,9 @@
               </a>
             </li>
             <li>
-              <a href="./pages/faqs">
+              <a href="../pages/faqs">
                 <figure>
-                  <img src="./assets/icons/footer__faqs.svg" alt="clock" />
+                  <img src="../assets/icons/footer__faqs.svg" alt="clock" />
                   <figcaption>
                     <h4 class="h4--bold">FAQs</h4>
                     <p class="Bodytext">Quick and Easy</p>
@@ -646,7 +624,7 @@
             <li>
               <button class="btn-newsletter pop-up-button" data-popup="footer-newsletter" class="pop-up-button">
                 <figure>
-                  <img src="./assets/icons/footer__faqs.svg" alt="clock" />
+                  <img src="../assets/icons/footer__faqs.svg" alt="clock" />
                   <figcaption>
                     <h4 class="h4--bold">FAQs</h4>
                     <p class="Bodytext">Quick and Easy</p>
@@ -665,7 +643,7 @@
                   <h4 class="pop-up__heading h4--light">
                     NEWSLETTER
                     <img
-                      src="./assets/icons/footer__pop-up__close-btn.svg"
+                      src="../assets/icons/footer__pop-up__close-btn.svg"
                       class="close-pop-up"
                       data-popup="footer-newsletter"
                     />
@@ -750,7 +728,7 @@
           </ul>
           <div class="row">
             <figure class="logo">
-              <img src="./assets/images/footer/footer__logo.png" alt="Best Pro Lighting" />
+              <img src="../assets/images/footer/footer__logo.png" alt="Best Pro Lighting" />
               <figcaption class="col">
                 <p class="Subtitle">Best Pro Lighting is a manufacturer and distributor of landscape lighting<br /></p>
                 <p class="Subtitle">© 2023 All rights reserved. Web Design and Development By Numinix</p>
@@ -805,7 +783,7 @@
               </ul>
               <img
                 width="228px"
-                src="./assets/images/footer/footer__credit-cards.png"
+                src="../assets/images/footer/footer__credit-cards.png"
                 alt="master card, visa, discover, paypal and american express"
               />
             </div>
@@ -814,9 +792,8 @@
       </div>
     </footer>
     <!-- F O O T E R    E N D -->
-    <script src="./assets/JS/vendors/swiper-bundle.min.js"></script>
-    <script src="./assets/JS/UI-components/pop-up.js"></script>
-    <script src="./assets/JS/pages/home/home.js"></script>
-    <script src="./assets/JS/UI-components/header.js"></script>
+    <script src="../assets/JS/pages/category/category.js"></script>
+    <script src="../assets/JS/UI-components/dropdown.js"></script>
+    <script src="../assets/JS/UI-components/header.js"></script>
   </body>
 </html>

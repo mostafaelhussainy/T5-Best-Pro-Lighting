@@ -22,7 +22,7 @@
   row-gap: $row-gap;
 }
 
-@mixin abs($top: 50%, $bottom: unset, $left: 50%, $right: unset) {
+@mixin abs($top: unset, $bottom: unset, $left: unset, $right: unset) {
   position: absolute;
   top: $top;
   bottom: $bottom;
@@ -73,10 +73,23 @@
   }
 }
 
-@mixin pseudo {
+@mixin pseudo($overlay: false) {
   content: '';
   display: block;
   position: absolute;
+  @if $overlay == true {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  } @else {
+    content: '';
+    display: block;
+    position: absolute;
+  }
 }
 
 /*------  R E S P O N S I V E    L A Y O U T ------*/
@@ -99,6 +112,7 @@
 */
 @mixin grid-layout($columns: 2, $gap: unset) {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: repeat(#{$columns}, 1fr);
-  grid-gap: $gap;
+  column-gap: $gap;
 }

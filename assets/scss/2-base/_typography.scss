@@ -75,7 +75,8 @@ h6 {
 
 /* B O D Y */
 .Bodytext,
-.Bodytext--bold {
+.Bodytext--bold,
+.Bodytext--uppercase {
   font-style: normal;
   line-height: 28px;
   color: #000000;
@@ -92,6 +93,12 @@ h6 {
   font-size: 18px;
 }
 
+.Bodytext--uppercase {
+  font-family: $poppins;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+}
 /* S U B T I T L E S */
 .Subtitle {
   font-family: $poppins;
@@ -102,20 +109,13 @@ h6 {
   color: #000000;
 }
 .Subtitle--Bold {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
-  color: #000000;
 }
 
-.Caption {
-  font-family: $poppins;
+.Subtitle--Caption {
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
-  font-style: normal;
   line-height: 28px;
   color: #000000;
 }

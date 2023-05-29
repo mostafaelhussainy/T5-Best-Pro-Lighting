@@ -32,6 +32,10 @@
   flex-direction: column;
 }
 
+.none {
+  display: none;
+}
+
 @font-face {
   font-family: "adobe-caslon-pro";
   src: url("https://use.typekit.net/af/d7062a/000000000000000000012d66/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/d7062a/000000000000000000012d66/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/d7062a/000000000000000000012d66/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
@@ -76,6 +80,20 @@
   !Important: give cards max-width if needed
 */
 /* B A S E */
+.animate {
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fadeOutRight {
+  opacity: 0;
+  transform: translate3d(3000px, 0, 0) !important;
+}
+
+.fadeOutLeft {
+  opacity: 0;
+  transform: translate3d(-3000px, 0, 0) !important;
+}
+
 /* B O D Y */
 /* C O N T A I N E R */
 .container {
@@ -271,7 +289,8 @@ h6 {
 
 /* B O D Y */
 .Bodytext,
-.Bodytext--bold {
+.Bodytext--bold,
+.Bodytext--uppercase {
   font-style: normal;
   line-height: 28px;
   color: #000000;
@@ -289,6 +308,13 @@ h6 {
   font-size: 18px;
 }
 
+.Bodytext--uppercase {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 /* S U B T I T L E S */
 .Subtitle {
   font-family: "Poppins", serif;
@@ -300,20 +326,13 @@ h6 {
 }
 
 .Subtitle--Bold {
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
-  color: #000000;
 }
 
-.Caption {
-  font-family: "Poppins", serif;
+.Subtitle--Caption {
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
-  font-style: normal;
   line-height: 28px;
   color: #000000;
 }
@@ -509,6 +528,9 @@ footer .footer--main .container > ul li h4:after {
   content: "";
   display: block;
   position: absolute;
+  content: "";
+  display: block;
+  position: absolute;
   height: 2px;
   width: 57px;
   background-color: #f26d21;
@@ -563,6 +585,7 @@ header {
   /* S U B   N A V */
   /* L O G O */
   /* M A I N   N A V */
+  /* N A V   S M A L L   S C R E E N S */
 }
 header #shipping-announcement {
   width: 100%;
@@ -785,6 +808,68 @@ header #mainnav .container li a {
 header #mainnav .container li a:hover {
   border-bottom: 3px solid #f26d21;
 }
+header #nav__small-screens {
+  display: none;
+}
+header #nav__small-screens ul li a,
+header #nav__small-screens ul li p {
+  color: #fff;
+}
+@media (max-width: 1750px) {
+  header #nav__small-screens {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+  header #nav__small-screens .nav__small-screens__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+header #nav__small-screens .nav__small-screens__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 18px;
+  width: 100%;
+  height: 100vh;
+  max-width: 280px;
+  padding: 15px;
+  position: relative;
+  z-index: 20;
+  background: #253241;
+  overflow: auto;
+}
+header #nav__small-screens .nav__small-screens__row {
+  width: 100%;
+  border-bottom: 1px solid #6d8aac;
+  padding-bottom: 18px;
+}
+header #nav__small-screens .nav__small-screens__row:last-of-type {
+  border-bottom: none;
+  padding-bottom: none;
+}
+header #nav__small-screens .nav__small-screens__row ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 18px;
+}
 
 .pop-up-visible {
   display: block !important;
@@ -807,9 +892,9 @@ header #mainnav .container li a:hover {
 }
 .overlay-wrapper .pop-up {
   position: absolute;
-  top: 50%;
+  top: unset;
   bottom: unset;
-  left: 50%;
+  left: unset;
   right: unset;
   z-index: 999;
   position: fixed;
@@ -865,6 +950,97 @@ header #mainnav .container li a:hover {
   }
 }
 
+#bread-crumb {
+  margin-bottom: 30px;
+}
+#bread-crumb .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 33.5px;
+       column-gap: 33.5px;
+  row-gap: unset;
+  padding: 50px 0;
+  border-bottom: 1px solid #ecedee;
+}
+@media (max-width: 768px) {
+  #bread-crumb .container {
+    -moz-column-gap: 9px;
+         column-gap: 9px;
+    border-top: 1px solid #ecedee;
+    padding: 15px 0;
+  }
+}
+#bread-crumb .container a h5 {
+  color: #919191;
+}
+@media (max-width: 576px) {
+  #bread-crumb .container a h5 {
+    font-size: 16px;
+  }
+}
+#bread-crumb .container a .active {
+  color: #f26d21;
+}
+
+.dropdown-parent {
+  /* rotate img */
+}
+.dropdown-parent .dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+.dropdown-parent .dropdown-wrapper {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.dropdown-parent img {
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown-parent .hidden {
+  display: none;
+}
+.dropdown-parent .rotate-180 {
+  transform: rotate(180deg);
+}
+
+/*
+<div class="dropdown-parent">
+<span class="dropdown-btn"
+  data-dropdown="(UNIQUE VALUE)">
+  <h6>
+  </h6>
+/////////////////////////////////////////////////////
+I C O N S:
+A R R O W
+  <img src="../assets/icons/dropdown.svg"
+    id="icon-(UNIQUE VALUE)">
+/////////////////////////////////////////////////////
+P L U S - M I N U S
+<img src="../assets/icons/accordion-plus.svg" alt="plus icon" id="plus-1">
+<img src="../assets/icons/accordion-minus.svg" alt="plus icon" id="minus-1" class="hidden">
+/////////////////////////////////////////////////////
+</span>
+<div class="dropdown-wrapper"
+  id="dropdown-(UNIQUE VALUE)">
+
+</div>
+</div>
+*/
 /* V E N D O R S */
 @font-face {
   font-family: swiper-icons;
