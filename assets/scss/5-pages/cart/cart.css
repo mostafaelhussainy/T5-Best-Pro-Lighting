@@ -1,0 +1,268 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+.container {
+  max-width: 1232px;
+}
+
+/* M A I N    S T Y L E  */
+main {
+  margin-bottom: 80px;
+}
+main table thead {
+  background: #f2f5f9;
+}
+@media (max-width: 768px) {
+  main table thead {
+    display: none;
+  }
+}
+main table thead tr th {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 9px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+main table thead tr th:last-of-type {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  main table tbody tr {
+    position: relative;
+    display: block;
+    padding: 15px;
+    padding-left: 110px;
+  }
+}
+main table tbody tr:nth-of-type(even) {
+  background: #f2f5f9;
+}
+main table tbody tr td {
+  padding: 20px 15px;
+  font-size: 16px;
+}
+main table tbody tr td * {
+  font-size: 16px;
+}
+main table tbody tr td:first-of-type {
+  width: 126px;
+}
+main table tbody tr td:first-of-type img {
+  height: auto;
+  max-height: 126px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 1124px) {
+  main table tbody tr td:nth-of-type(2) {
+    width: 45%;
+  }
+}
+main table tbody tr td:nth-of-type(4) .row {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+main table tbody tr td:nth-of-type(4) .row input {
+  text-align: center;
+  vertical-align: top;
+  width: 54px;
+  padding: 0;
+}
+main table tbody tr td:nth-of-type(4) .row .col {
+  row-gap: 5px;
+}
+main table tbody tr td:nth-of-type(4) .row .col button {
+  padding: 0;
+  color: #f26d21;
+}
+@media (max-width: 768px) {
+  main table tbody tr td:nth-of-type(4) .row .col button {
+    font-size: 12px;
+  }
+}
+main table tbody tr td:nth-of-type(4) .row .col button:hover {
+  text-decoration: underline;
+}
+main table tbody tr td:last-of-type {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  main table tbody tr td:last-of-type {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  main table tbody tr td {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+  }
+  main table tbody tr td * {
+    font-size: 14px;
+  }
+  main table tbody tr td:first-of-type {
+    left: 15px;
+    position: absolute;
+    padding: 0;
+    visibility: visible;
+    width: 75px;
+  }
+}
+@media (max-width: 768px) {
+  main table tfoot {
+    display: table;
+    width: 100%;
+  }
+}
+main table tfoot tr td {
+  text-align: right;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+main table tfoot tr:first-of-type td {
+  padding-top: 20px;
+}
+main table tfoot tr:last-of-type td {
+  padding-bottom: 20px;
+  width: 15%;
+}
+
+/* S H I P P I N G    S T Y L E  */
+#shipping {
+  margin-bottom: 80px;
+}
+#shipping button {
+  padding: 10px 30px;
+}
+@media (max-width: 768px) {
+  #shipping button {
+    width: 100%;
+  }
+}
+#shipping h3 {
+  margin-bottom: 10px;
+}
+#shipping .inner-container {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  /* S H I P P I N G    F O R M    S T Y L E  */
+  /* S H I P P I N G    M E T H O D S    S T Y L E  */
+}
+@media (max-width: 992px) {
+  #shipping .inner-container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  #shipping .inner-container .shipping-form,
+  #shipping .inner-container .shipping-methods-wrapper {
+    width: 100% !important;
+  }
+}
+#shipping .inner-container .shipping-form {
+  /*BOX*/
+  width: 350px;
+}
+#shipping .inner-container .shipping-form label:last-of-type {
+  margin-bottom: 26px;
+}
+#shipping .inner-container .shipping-methods-wrapper {
+  /*BOX*/
+  width: calc(100% - 390px);
+}
+#shipping .inner-container .shipping-methods-wrapper h4,
+#shipping .inner-container .shipping-methods-wrapper h5 {
+  /*FONT*/
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  /*BOX*/
+  margin-bottom: 20px;
+}
+#shipping .inner-container .shipping-methods-wrapper .shipping-method {
+  /*BOX*/
+  margin-bottom: 20px;
+}
+#shipping .inner-container .shipping-methods-wrapper .shipping-method:last-of-type {
+  margin-bottom: 0;
+}
+#shipping .inner-container .shipping-methods-wrapper .shipping-method .b .row {
+  /*BOX*/
+  padding: 9px 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+#shipping .inner-container .shipping-methods-wrapper .shipping-method .b .row label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  row-gap: unset;
+}
+#shipping .inner-container .shipping-methods-wrapper .shipping-method .b .row:nth-of-type(even) {
+  background-color: #f2f5f9;
+}
+
+/* C A R T    C O N T R O L    S T Y L E  */
+#cart__control {
+  margin-bottom: 80px;
+}
+#cart__control .container {
+  /*BOX*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+}
+@media (max-width: 768px) {
+  #cart__control .container {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+#cart__control .container button {
+  /*BOX*/
+  padding: 10px 30px;
+}
+@media (max-width: 768px) {
+  #cart__control .container button {
+    width: 100%;
+  }
+}
+#cart__control .container .row {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (max-width: 768px) {
+  #cart__control .container .row {
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=cart.css.map */

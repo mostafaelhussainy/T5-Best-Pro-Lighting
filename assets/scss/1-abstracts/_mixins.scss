@@ -74,9 +74,6 @@
 }
 
 @mixin pseudo($overlay: false) {
-  content: '';
-  display: block;
-  position: absolute;
   @if $overlay == true {
     content: '';
     display: block;
