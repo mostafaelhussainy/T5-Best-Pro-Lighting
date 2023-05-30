@@ -1,0 +1,9 @@
+@import '../../helper.scss';
+#header__main,
+#footer__main {
+  display: none !important;
+}
+#header__checkout,
+#footer__main {
+  display: block;
+}
