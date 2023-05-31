@@ -3,7 +3,222 @@
 #footer__main {
   display: none !important;
 }
-#header__checkout,
-#footer__main {
-  display: block;
+#header__sub,
+#footer__sub {
+  display: block !important;
+}
+
+/*FONT COLOR*/
+h4,
+h5,
+p,
+label,
+span {
+  color: $Primary;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Bodytext {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  @include flex(flex-start, flex-start, column);
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+}
+
+main {
+  flex: 1;
+  .checkout-container {
+    column-gap: 40px;
+    @include respond-to(xl) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 40px;
+    }
+    .new-customer {
+      margin-bottom: 80px;
+      display: none;
+      width: 64%;
+      .user-checkout {
+        overflow: hidden;
+      }
+      @include respond-to(xl) {
+        width: 100%;
+      }
+      h4.b-b {
+        padding-top: 60px;
+        padding-bottom: 9px;
+        margin-bottom: 27px;
+      }
+      h5 {
+        margin-bottom: 10px;
+      }
+      .row {
+        column-gap: 24px;
+        @include respond-to(sm) {
+          flex-direction: column;
+          row-gap: 20px;
+        }
+      }
+      label {
+        position: relative;
+        margin-bottom: 30px;
+        width: 100%;
+
+        input,
+        select {
+          max-width: unset;
+        }
+        input[type='tel'],
+        input[type='email'] {
+          max-width: 473.98px;
+        }
+      }
+      &__actions {
+        @include flex(flex-start, center, row, 10px);
+      }
+      .shipping-address {
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .account {
+      // display: none;
+      width: 64%;
+      @include respond-to(xl) {
+        width: 100%;
+      }
+      h4.b-b {
+        padding-top: 60px;
+        padding-bottom: 9px;
+        margin-bottom: 27px;
+      }
+      .account__container {
+        column-gap: 40px;
+        justify-content: space-between;
+        @include respond-to(md) {
+          column-gap: 12px;
+          flex-direction: column;
+          row-gap: 40px;
+        }
+
+        &__sign-in {
+          width: calc(50% - 20px);
+          @include respond-to(md) {
+            width: 100%;
+          }
+          h5 {
+            margin-bottom: 10px;
+          }
+          label {
+            position: relative;
+            margin-bottom: 30px;
+            width: fit-content;
+            &:last-of-type {
+              margin-bottom: 60px;
+            }
+            a {
+              position: absolute;
+              right: 0;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          button {
+            margin-bottom: 30px;
+          }
+        }
+        &__new-customer {
+          width: calc(50% - 20px);
+          @include respond-to(md) {
+            width: 100%;
+          }
+          h4 {
+            margin-bottom: 10px;
+          }
+          ul {
+            margin-bottom: 30px;
+            width: 100%;
+            p {
+              margin-bottom: 10px;
+              // white-space: nowrap;
+            }
+            li {
+              // white-space: nowrap;
+              list-style: disc;
+              list-style-position: inside;
+            }
+          }
+        }
+      }
+    }
+    .shopping-cart {
+      /*STICKY*/
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      @media (max-width: 1024px) {
+        position: relative;
+      }
+      /*BOX*/
+      width: 36%;
+      height: 100vh;
+      max-width: 566px;
+      background-color: #edf0fa;
+      padding: 60px 30px;
+      @include respond-to(xl) {
+        width: 100%;
+        max-width: unset;
+        // margin: 0 -7.5%;
+      }
+      @include respond-to(md) {
+        padding: 30px 15px;
+      }
+      .row {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        &:first-of-type {
+          padding-bottom: 10px;
+          margin-bottom: 30px;
+        }
+        &.b-b {
+          padding-bottom: 10px;
+          margin-bottom: 30px;
+        }
+        figure {
+          @include flex(flex-start, flex-start, row, 10px);
+          img {
+            height: 52px;
+          }
+        }
+        .col {
+          text-align: right;
+          button {
+            padding: 0;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
 }

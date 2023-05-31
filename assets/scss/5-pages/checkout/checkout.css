@@ -17,7 +17,259 @@
   display: none !important;
 }
 
-#header__checkout,
-#footer__main {
-  display: block;
+#header__sub,
+#footer__sub {
+  display: block !important;
+}
+
+/*FONT COLOR*/
+h4,
+h5,
+p,
+label,
+span {
+  color: #253242;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Bodytext {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+}
+body header,
+body main,
+body footer {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+main .checkout-container {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+@media (max-width: 1200px) {
+  main .checkout-container {
+    flex-direction: column;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 40px;
+  }
+}
+main .checkout-container .new-customer {
+  margin-bottom: 80px;
+  display: none;
+  width: 64%;
+}
+main .checkout-container .new-customer .user-checkout {
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  main .checkout-container .new-customer {
+    width: 100%;
+  }
+}
+main .checkout-container .new-customer h4.b-b {
+  padding-top: 60px;
+  padding-bottom: 9px;
+  margin-bottom: 27px;
+}
+main .checkout-container .new-customer h5 {
+  margin-bottom: 10px;
+}
+main .checkout-container .new-customer .row {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media (max-width: 576px) {
+  main .checkout-container .new-customer .row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+main .checkout-container .new-customer label {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+main .checkout-container .new-customer label input,
+main .checkout-container .new-customer label select {
+  max-width: unset;
+}
+main .checkout-container .new-customer label input[type=tel],
+main .checkout-container .new-customer label input[type=email] {
+  max-width: 473.98px;
+}
+main .checkout-container .new-customer__actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+}
+main .checkout-container .new-customer .shipping-address {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+main .checkout-container .account {
+  width: 64%;
+}
+@media (max-width: 1200px) {
+  main .checkout-container .account {
+    width: 100%;
+  }
+}
+main .checkout-container .account h4.b-b {
+  padding-top: 60px;
+  padding-bottom: 9px;
+  margin-bottom: 27px;
+}
+main .checkout-container .account .account__container {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  main .checkout-container .account .account__container {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+main .checkout-container .account .account__container__sign-in {
+  width: calc(50% - 20px);
+}
+@media (max-width: 768px) {
+  main .checkout-container .account .account__container__sign-in {
+    width: 100%;
+  }
+}
+main .checkout-container .account .account__container__sign-in h5 {
+  margin-bottom: 10px;
+}
+main .checkout-container .account .account__container__sign-in label {
+  position: relative;
+  margin-bottom: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .checkout-container .account .account__container__sign-in label:last-of-type {
+  margin-bottom: 60px;
+}
+main .checkout-container .account .account__container__sign-in label a {
+  position: absolute;
+  right: 0;
+}
+main .checkout-container .account .account__container__sign-in label a:hover {
+  text-decoration: underline;
+}
+main .checkout-container .account .account__container__sign-in button {
+  margin-bottom: 30px;
+}
+main .checkout-container .account .account__container__new-customer {
+  width: calc(50% - 20px);
+}
+@media (max-width: 768px) {
+  main .checkout-container .account .account__container__new-customer {
+    width: 100%;
+  }
+}
+main .checkout-container .account .account__container__new-customer h4 {
+  margin-bottom: 10px;
+}
+main .checkout-container .account .account__container__new-customer ul {
+  margin-bottom: 30px;
+  width: 100%;
+}
+main .checkout-container .account .account__container__new-customer ul p {
+  margin-bottom: 10px;
+}
+main .checkout-container .account .account__container__new-customer ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+main .checkout-container .shopping-cart {
+  /*STICKY*/ /* Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  /*BOX*/
+  width: 36%;
+  height: 100vh;
+  max-width: 566px;
+  background-color: #edf0fa;
+  padding: 60px 30px;
+}
+@media (max-width: 1024px) {
+  main .checkout-container .shopping-cart {
+    position: relative;
+  }
+}
+@media (max-width: 1200px) {
+  main .checkout-container .shopping-cart {
+    width: 100%;
+    max-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  main .checkout-container .shopping-cart {
+    padding: 30px 15px;
+  }
+}
+main .checkout-container .shopping-cart .row {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+main .checkout-container .shopping-cart .row:last-of-type {
+  margin-bottom: 0;
+}
+main .checkout-container .shopping-cart .row:first-of-type {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+main .checkout-container .shopping-cart .row.b-b {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+main .checkout-container .shopping-cart .row figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+}
+main .checkout-container .shopping-cart .row figure img {
+  height: 52px;
+}
+main .checkout-container .shopping-cart .row .col {
+  text-align: right;
+}
+main .checkout-container .shopping-cart .row .col button {
+  padding: 0;
+}
+main .checkout-container .shopping-cart .row .col button:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=checkout.css.map */

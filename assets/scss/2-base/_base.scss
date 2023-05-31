@@ -14,14 +14,11 @@ body {
 }
 
 /* C O N T A I N E R */
+
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: $container-max-width;
-
-  @include respond-to(xxl) {
-    width: 85%;
-  }
 
   @include respond-to(lg) {
     width: 90%;
@@ -31,7 +28,6 @@ body {
     width: 95%;
   }
 }
-
 /* S C R O L L    B A R */
 ::-webkit-scrollbar {
   width: $scrollbar-width;

@@ -37,8 +37,27 @@ main table thead tr th {
   text-align: left;
   vertical-align: middle;
 }
+main table thead tr th:nth-of-type(4) {
+  width: 1%;
+}
 main table thead tr th:last-of-type {
   text-align: right;
+}
+@media (max-width: 1440px) {
+  main table thead tr th:nth-of-type(1) {
+    width: 15%;
+  }
+  main table thead tr th:nth-of-type(2) {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  main table thead tr th:nth-of-type(1) {
+    width: auto;
+  }
+  main table thead tr th:nth-of-type(2) {
+    width: auto;
+  }
 }
 @media (max-width: 768px) {
   main table tbody tr {
@@ -72,6 +91,17 @@ main table tbody tr td:first-of-type img {
 @media (min-width: 1124px) {
   main table tbody tr td:nth-of-type(2) {
     width: 45%;
+  }
+}
+main table tbody tr td:nth-of-type(2) span,
+main table tbody tr td:nth-of-type(2) a {
+  display: block;
+  white-space: nowrap;
+}
+@media (max-width: 1440px) {
+  main table tbody tr td:nth-of-type(2) span,
+  main table tbody tr td:nth-of-type(2) a {
+    white-space: normal;
   }
 }
 main table tbody tr td:nth-of-type(4) .row {

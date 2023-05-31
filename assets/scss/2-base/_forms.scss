@@ -2,9 +2,21 @@
 label {
   /*BOX*/
   @include flex(flex-start, flex-start, column, unset, 13px);
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   &:last-of-type {
     margin-bottom: 0;
+  }
+  position: relative;
+  /******************************************/
+  /* I N V A L I D */
+  .invalid {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    color: red;
+    @include respond-to(lg) {
+      font-size: 12px;
+    }
   }
   /*FONT*/
   font-family: 'Poppins';
@@ -27,7 +39,8 @@ input {
   line-height: 28px;
   /*BOX*/
   width: 100%;
-  height: 56px;
+  // height: 56px;
+  height: 48px;
   border: 1px solid #e1e1e1;
   padding-left: 20px;
   max-width: 370px;
@@ -47,6 +60,22 @@ input[type='radio'] {
   accent-color: $Secondary;
 }
 
+label:has(input[type='checkbox']) {
+  @include flex(flex-start, center, row, 6px);
+  input {
+    /*BOX*/
+    width: 18px;
+    height: 18px;
+    /*APPEARANCE*/
+    &:checked {
+      appearance: none;
+      background-color: $Secondary;
+      background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2981 3.41971L12.305 2.74513C12.1732 2.65589 12.0115 2.6224 11.8551 2.65198C11.6988 2.68155 11.5604 2.77178 11.4704 2.90298L6.60205 10.0808L4.36507 7.84439C4.25247 7.73244 4.10015 7.66961 3.94137 7.66961C3.7826 7.66961 3.63028 7.73244 3.51768 7.84439L2.66642 8.69454C2.5543 8.80761 2.49139 8.96039 2.49139 9.11962C2.49139 9.27885 2.5543 9.43163 2.66642 9.5447L6.10691 12.9846C6.29965 13.1774 6.60261 13.3241 6.8751 13.3241C7.14759 13.3241 7.4223 13.1536 7.59953 12.896L13.4581 4.2527C13.5024 4.18752 13.5333 4.11425 13.5492 4.03709C13.5651 3.95993 13.5657 3.88038 13.5508 3.80302C13.5359 3.72565 13.506 3.65197 13.4626 3.5862C13.4192 3.52043 13.3633 3.46385 13.2981 3.41971Z" fill="white"/></svg>');
+      background-size: 18px 18px;
+      background-position: center;
+    }
+  }
+}
 /******************************************/
 /* S E L E C T */
 select {
@@ -59,7 +88,8 @@ select {
   /*BOX*/
   width: 100%;
   max-width: 370px;
-  padding: 11px 36px 11px 10px;
+  // padding: 11px 36px 11px 10px;
+  padding: 9px 36px 9px 10px;
   border: 1px solid #e1e1e1;
   /* FONT */
   font-family: 'Poppins';
@@ -76,4 +106,8 @@ option {
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+}
+
+.invalid-input {
+  color: red;
 }

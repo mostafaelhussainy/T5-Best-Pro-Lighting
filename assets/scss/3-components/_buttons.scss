@@ -1,8 +1,8 @@
 button {
   cursor: pointer;
-  padding: 25px 30px;
+  padding: 10px 30px;
   @include respond-to(md) {
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 }
 

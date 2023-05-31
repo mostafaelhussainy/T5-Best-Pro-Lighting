@@ -1,4 +1,4 @@
-footer {
+#footer__main {
   .footer--pre {
     background-color: $Background2;
     .container {
@@ -125,5 +125,19 @@ footer {
         }
       }
     }
+  }
+}
+
+#footer__sub {
+  display: none;
+  background-color: $Primary;
+  padding: 16px 0;
+  @include respond-to(md) {
+    padding: 10px 0;
+  }
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
   }
 }

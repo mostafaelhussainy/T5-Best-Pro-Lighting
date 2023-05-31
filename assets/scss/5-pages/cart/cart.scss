@@ -22,8 +22,27 @@ main {
           padding: 9px 15px;
           text-align: left;
           vertical-align: middle;
+          &:nth-of-type(4) {
+            width: 1%;
+          }
           &:last-of-type {
             text-align: right;
+          }
+          @include respond-to(xxl) {
+            &:nth-of-type(1) {
+              width: 15%;
+            }
+            &:nth-of-type(2) {
+              width: 50%;
+            }
+          }
+          @include respond-to(md) {
+            &:nth-of-type(1) {
+              width: auto;
+            }
+            &:nth-of-type(2) {
+              width: auto;
+            }
           }
         }
       }
@@ -60,6 +79,14 @@ main {
           &:nth-of-type(2) {
             @media (min-width: 1124px) {
               width: 45%;
+            }
+            span,
+            a {
+              display: block;
+              white-space: nowrap;
+              @include respond-to(xxl) {
+                white-space: normal;
+              }
             }
           }
           &:nth-of-type(4) {
