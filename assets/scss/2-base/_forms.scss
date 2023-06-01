@@ -24,6 +24,7 @@ label {
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+  white-space: nowrap;
   /*APPEARANCE*/
   color: #191919;
 }
@@ -60,6 +61,18 @@ input[type='radio'] {
   accent-color: $Secondary;
 }
 
+label:has(input[type='checkbox'], input[type='radio']) {
+  @include flex(flex-start, center, row, 6px);
+  input {
+    /*BOX*/
+    width: 18px;
+    height: 18px;
+    /*APPEARANCE*/
+    &:checked {
+      appearance: $Secondary;
+    }
+  }
+}
 label:has(input[type='checkbox']) {
   @include flex(flex-start, center, row, 6px);
   input {
@@ -106,6 +119,29 @@ option {
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+}
+
+textarea {
+  /*BOX*/
+  height: 150px;
+  width: 100%;
+  max-width: unset;
+  padding: 10px 20px;
+  display: block;
+  resize: vertical;
+  min-height: 50px;
+  border: 1px solid #e1e1e1;
+  /*COLORS*/
+  background: #fff;
+  color: #000;
+  /*FONT*/
+  font-size: inherit;
+  font-family: inherit;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .invalid-input {

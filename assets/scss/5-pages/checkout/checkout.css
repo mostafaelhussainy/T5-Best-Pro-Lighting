@@ -73,51 +73,51 @@ main .checkout-container {
     row-gap: 40px;
   }
 }
-main .checkout-container .new-customer {
+main .checkout-container .customer-new {
   margin-bottom: 80px;
   display: none;
   width: 64%;
 }
-main .checkout-container .new-customer .user-checkout {
+main .checkout-container .customer-new .user-checkout {
   overflow: hidden;
 }
 @media (max-width: 1200px) {
-  main .checkout-container .new-customer {
+  main .checkout-container .customer-new {
     width: 100%;
   }
 }
-main .checkout-container .new-customer h4.b-b {
+main .checkout-container .customer-new h4.b-b {
   padding-top: 60px;
   padding-bottom: 9px;
   margin-bottom: 27px;
 }
-main .checkout-container .new-customer h5 {
+main .checkout-container .customer-new h5 {
   margin-bottom: 10px;
 }
-main .checkout-container .new-customer .row {
+main .checkout-container .customer-new .row {
   -moz-column-gap: 24px;
        column-gap: 24px;
 }
 @media (max-width: 576px) {
-  main .checkout-container .new-customer .row {
+  main .checkout-container .customer-new .row {
     flex-direction: column;
     row-gap: 20px;
   }
 }
-main .checkout-container .new-customer label {
+main .checkout-container .customer-new label {
   position: relative;
   margin-bottom: 30px;
   width: 100%;
 }
-main .checkout-container .new-customer label input,
-main .checkout-container .new-customer label select {
+main .checkout-container .customer-new label input,
+main .checkout-container .customer-new label select {
   max-width: unset;
 }
-main .checkout-container .new-customer label input[type=tel],
-main .checkout-container .new-customer label input[type=email] {
+main .checkout-container .customer-new label input[type=tel],
+main .checkout-container .customer-new label input[type=email] {
   max-width: 473.98px;
 }
-main .checkout-container .new-customer__actions {
+main .checkout-container .customer-new__actions {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -126,9 +126,147 @@ main .checkout-container .new-customer__actions {
        column-gap: 10px;
   row-gap: unset;
 }
-main .checkout-container .new-customer .shipping-address {
+main .checkout-container .customer-new .shipping-address {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+}
+main .checkout-container .customer-logged {
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+main .checkout-container .customer-logged h4.b-b {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+main .checkout-container .customer-logged__address {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  main .checkout-container .customer-logged__address {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+main .checkout-container .customer-logged__address--billing, main .checkout-container .customer-logged__address--shipping {
+  white-space: nowrap;
+  line-height: 22px;
+  font-weight: 400;
+}
+main .checkout-container .customer-logged__address--billing h4, main .checkout-container .customer-logged__address--shipping h4 {
+  margin-bottom: 15px;
+}
+main .checkout-container .customer-logged__address--billing button, main .checkout-container .customer-logged__address--shipping button {
+  margin-top: 15px;
+  padding: 0;
+  border: 0;
+}
+main .checkout-container .customer-logged__address--billing button:hover, main .checkout-container .customer-logged__address--shipping button:hover {
+  text-decoration: underline;
+}
+main .checkout-container .customer-logged__shipping-method {
+  margin-bottom: 40px;
+}
+main .checkout-container .customer-logged__shipping-method .row {
+  width: 100%;
+  justify-content: space-between;
+}
+main .checkout-container .customer-logged__shipping-method .row span {
+  font-weight: 400;
+}
+main .checkout-container .customer-logged__payment-method {
+  margin-bottom: 40px;
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper {
+  margin-bottom: 20px;
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper img {
+  max-height: 25px;
+  margin-left: 40px;
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper label {
+  width: 50%;
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper label:has(input[type=text]) input {
+  max-width: 426px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  main .checkout-container .customer-logged__payment-method .payment-method-wrapper label:has(input[type=text]) {
+    width: 100%;
+  }
+  main .checkout-container .customer-logged__payment-method .payment-method-wrapper label:has(input[type=text]) input {
+    max-width: unset;
+    width: 100%;
+  }
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row {
+  width: 100%;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media (max-width: 768px) {
+  main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row {
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row label:first-of-type {
+    margin-bottom: 0;
+  }
+  main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row label:has(input[type=text], select) {
+    width: 100%;
+  }
+  main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row label:has(input[type=text], select) input {
+    max-width: unset;
+  }
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row .select-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+}
+main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row .select-row select {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  main .checkout-container .customer-logged__payment-method .payment-method-wrapper .row .select-row select {
+    width: 50%;
+    max-width: unset;
+  }
+}
+main .checkout-container .customer-logged__promo-code {
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  main .checkout-container .customer-logged__promo-code label .row {
+    width: 100%;
+  }
+  main .checkout-container .customer-logged__promo-code label .row input {
+    max-width: unset;
+    width: 100%;
+  }
+}
+main .checkout-container .customer-logged__order-comments {
+  margin-bottom: 40px;
+}
+main .checkout-container .customer-logged p:last-of-type {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  main .checkout-container .customer-logged button[type=submit] {
+    width: 100%;
+    max-width: unset;
+  }
 }
 main .checkout-container .account {
   width: 64%;
@@ -186,25 +324,25 @@ main .checkout-container .account .account__container__sign-in label a:hover {
 main .checkout-container .account .account__container__sign-in button {
   margin-bottom: 30px;
 }
-main .checkout-container .account .account__container__new-customer {
+main .checkout-container .account .account__container__customer-new {
   width: calc(50% - 20px);
 }
 @media (max-width: 768px) {
-  main .checkout-container .account .account__container__new-customer {
+  main .checkout-container .account .account__container__customer-new {
     width: 100%;
   }
 }
-main .checkout-container .account .account__container__new-customer h4 {
+main .checkout-container .account .account__container__customer-new h4 {
   margin-bottom: 10px;
 }
-main .checkout-container .account .account__container__new-customer ul {
+main .checkout-container .account .account__container__customer-new ul {
   margin-bottom: 30px;
   width: 100%;
 }
-main .checkout-container .account .account__container__new-customer ul p {
+main .checkout-container .account .account__container__customer-new ul p {
   margin-bottom: 10px;
 }
-main .checkout-container .account .account__container__new-customer ul li {
+main .checkout-container .account .account__container__customer-new ul li {
   list-style: disc;
   list-style-position: inside;
 }
@@ -223,6 +361,7 @@ main .checkout-container .shopping-cart {
 @media (max-width: 1024px) {
   main .checkout-container .shopping-cart {
     position: relative;
+    height: auto;
   }
 }
 @media (max-width: 1200px) {
@@ -272,4 +411,9 @@ main .checkout-container .shopping-cart .row .col button {
 }
 main .checkout-container .shopping-cart .row .col button:hover {
   text-decoration: underline;
+}
+
+.customer-new,
+.account {
+  display: none;
 }/*# sourceMappingURL=checkout.css.map */

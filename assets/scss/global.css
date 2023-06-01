@@ -186,6 +186,7 @@ label {
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+  white-space: nowrap;
   /*APPEARANCE*/
   color: #191919;
 }
@@ -236,6 +237,27 @@ input[type=radio] {
   height: 13px;
   /*APPEARANCE*/
   accent-color: #f26d21;
+}
+
+label:has(input[type=checkbox], input[type=radio]) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  row-gap: unset;
+}
+label:has(input[type=checkbox], input[type=radio]) input {
+  /*BOX*/
+  width: 18px;
+  height: 18px;
+  /*APPEARANCE*/
+}
+label:has(input[type=checkbox], input[type=radio]) input:checked {
+  -webkit-appearance: #f26d21;
+     -moz-appearance: #f26d21;
+          appearance: #f26d21;
 }
 
 label:has(input[type=checkbox]) {
@@ -294,6 +316,29 @@ option {
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+}
+
+textarea {
+  /*BOX*/
+  height: 150px;
+  width: 100%;
+  max-width: unset;
+  padding: 10px 20px;
+  display: block;
+  resize: vertical;
+  min-height: 50px;
+  border: 1px solid #e1e1e1;
+  /*COLORS*/
+  background: #fff;
+  color: #000;
+  /*FONT*/
+  font-size: inherit;
+  font-family: inherit;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .invalid-input {

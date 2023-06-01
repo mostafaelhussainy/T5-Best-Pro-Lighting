@@ -47,7 +47,7 @@ main {
       column-gap: 0;
       row-gap: 40px;
     }
-    .new-customer {
+    .customer-new {
       margin-bottom: 80px;
       display: none;
       width: 64%;
@@ -92,6 +92,136 @@ main {
       .shipping-address {
         overflow: hidden;
         transition: all 0.3s ease-in-out;
+      }
+    }
+    .customer-logged {
+      padding-top: 60px;
+      margin-bottom: 80px;
+      h4.b-b {
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+      }
+
+      &__address {
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @include respond-to(md) {
+          flex-direction: column;
+          row-gap: 20px;
+        }
+        &--billing,
+        &--shipping {
+          h4 {
+            margin-bottom: 15px;
+          }
+          white-space: nowrap;
+          line-height: 22px;
+          font-weight: 400;
+          button {
+            margin-top: 15px;
+            padding: 0;
+            border: 0;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      &__shipping-method {
+        margin-bottom: 40px;
+        .row {
+          width: 100%;
+          justify-content: space-between;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+      &__payment-method {
+        margin-bottom: 40px;
+        .payment-method-wrapper {
+          margin-bottom: 20px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          img {
+            max-height: 25px;
+            margin-left: 40px;
+          }
+          label {
+            width: 50%;
+            &:has(input[type='text']) {
+              input {
+                max-width: 426px;
+                width: 100%;
+              }
+              @include respond-to(md) {
+                width: 100%;
+                input {
+                  max-width: unset;
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          .row {
+            width: 100%;
+            column-gap: 10px;
+            @include respond-to(md) {
+              flex-direction: column;
+              row-gap: 20px;
+              width: 100%;
+              margin-bottom: 20px;
+              label {
+                &:first-of-type {
+                  margin-bottom: 0;
+                }
+                &:has(input[type='text'], select) {
+                  width: 100%;
+                  input {
+                    max-width: unset;
+                  }
+                }
+              }
+            }
+            .select-row {
+              width: 100%;
+              @include flex(center, center, row, 10px);
+              select {
+                width: 100%;
+                @include respond-to(md) {
+                  width: 50%;
+                  max-width: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__promo-code {
+        margin-bottom: 40px;
+        @include respond-to(md) {
+          label .row {
+            width: 100%;
+            input {
+              max-width: unset;
+              width: 100%;
+            }
+          }
+        }
+      }
+      &__order-comments {
+        margin-bottom: 40px;
+      }
+      p:last-of-type {
+        margin-bottom: 10px;
+      }
+      button[type='submit'] {
+        @include respond-to(md) {
+          width: 100%;
+          max-width: unset;
+        }
       }
     }
     .account {
@@ -141,7 +271,7 @@ main {
             margin-bottom: 30px;
           }
         }
-        &__new-customer {
+        &__customer-new {
           width: calc(50% - 20px);
           @include respond-to(md) {
             width: 100%;
@@ -173,6 +303,7 @@ main {
       align-self: flex-start;
       @media (max-width: 1024px) {
         position: relative;
+        height: auto;
       }
       /*BOX*/
       width: 36%;
@@ -221,4 +352,8 @@ main {
       }
     }
   }
+}
+.customer-new,
+.account {
+  display: none;
 }
