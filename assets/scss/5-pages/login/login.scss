@@ -53,6 +53,11 @@ main {
           list-style-position: inside;
         }
       }
+      button {
+        @include respond-to(md) {
+          width: 100%;
+        }
+      }
     }
   }
 }

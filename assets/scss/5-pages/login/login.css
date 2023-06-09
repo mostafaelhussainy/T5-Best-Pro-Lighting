@@ -71,4 +71,9 @@ main .container .new-customer ul {
 main .container .new-customer ul li {
   list-style-type: disc;
   list-style-position: inside;
+}
+@media (max-width: 768px) {
+  main .container .new-customer button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=login.css.map */
