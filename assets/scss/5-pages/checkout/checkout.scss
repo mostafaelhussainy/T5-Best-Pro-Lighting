@@ -353,7 +353,14 @@ main {
     }
   }
 }
-.customer-new,
+
 .account {
+  // display: none;
+}
+
+.customer-new {
+  display: none;
+}
+.customer-logged {
   display: none;
 }

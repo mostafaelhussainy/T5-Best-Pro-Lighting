@@ -1,0 +1,74 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+/* M A I N    S T Y L E */
+main {
+  margin-bottom: 122px;
+}
+main .container {
+  max-width: 1024px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  main .container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+main .container .existing-members {
+  max-width: 405px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  main .container .existing-members {
+    margin: 0 auto;
+  }
+}
+main .container .existing-members label {
+  row-gap: 5px;
+}
+main .container .existing-members label a {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .container .existing-members label input {
+  max-width: unset !important;
+}
+main .container .existing-members label:last-of-type {
+  margin-bottom: 30px;
+}
+main .container .existing-members button {
+  max-width: unset;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  main .container .new-customer {
+    margin: 0 auto;
+  }
+}
+main .container .new-customer ul,
+main .container .new-customer ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+main .container .new-customer ul {
+  margin-bottom: 30px;
+}
+main .container .new-customer ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}/*# sourceMappingURL=login.css.map */

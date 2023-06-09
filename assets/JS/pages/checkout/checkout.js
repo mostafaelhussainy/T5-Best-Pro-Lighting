@@ -1,6 +1,6 @@
 const continueBtn = document.querySelector('.new-customer__continue');
 const accountContainer = document.querySelector('.account');
-const newCustomerContainer = document.querySelector('.new-customer');
+const newCustomerContainer = document.querySelector('.customer-new');
 
 continueBtn.addEventListener('click', () => {
   accountContainer.style.display = 'none';
@@ -37,7 +37,7 @@ const checkPasswordsEquality = () => {
   }
 };
 
-form.addEventListener('submit', e => {
+form?.addEventListener('submit', e => {
   if (!guestCheck.checked) {
     e.preventDefault();
     checkPasswordsEquality();
