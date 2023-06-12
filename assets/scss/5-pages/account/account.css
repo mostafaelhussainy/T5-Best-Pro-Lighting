@@ -1,0 +1,48 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+/* M A I N    S T Y L E */
+main .container {
+  width: 1024px;
+}
+main .info-cards-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: unset;
+}
+main .info-cards-wrapper .info-cards {
+  flex-basis: calc((100% - (2) * 24px) / 3);
+}
+main .info-cards-wrapper .info-cards__heading {
+  /*FONTS*/
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  /*BOX*/
+  margin-bottom: 10px;
+}
+main .info-cards-wrapper .info-cards__content {
+  /*FONTS*/
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=account.css.map */

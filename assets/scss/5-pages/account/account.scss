@@ -1,0 +1,32 @@
+@import '../../helper.scss';
+
+/* M A I N    S T Y L E */
+main {
+  .container {
+    width: 1024px;
+  }
+  .info-cards-wrapper {
+    @include flex(flex-start, flex-start, row, 24px);
+    .info-cards {
+      @include card-width(3, 24px);
+      &__heading {
+        /*FONTS*/
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        /*BOX*/
+        margin-bottom: 10px;
+      }
+      &__content {
+        /*FONTS*/
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

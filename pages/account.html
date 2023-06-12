@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Pro Lighting</title>
     <link rel="stylesheet" href="../assets/scss/global.css" />
-    <link rel="stylesheet" href="../assets/scss/5-pages/signup/signup.css" />
+    <link rel="stylesheet" href="../assets/scss/5-pages/account/account.css" />
     <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon" />
   </head>
 
@@ -317,97 +317,52 @@
         </a>
         <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
         <a href="/">
-          <h5 class="active">SIGN IN</h5>
+          <h5 class="active">OVERVIEW</h5>
         </a>
       </div>
     </section>
     <!-- B R E A D    C R U M B    E N D -->
 
     <!-- M A I N    L A Y O U T    S T A R T -->
-    <form action="" id="create-account-form">
+    <main>
       <div class="container">
-        <div class="shipping-info">
-          <h3 class="subheader">SHIPPING ADDRESS</h3>
-          <div class="row">
-            <label>
-              First name
-              <input type="text" required pattern="^[a-zA-Z\s]{2,}$" />
-              <p class="invalid">The input value is shorter than 2 characters</p>
-            </label>
-            <label>
-              Last name
-              <input type="text" required pattern="^[a-zA-Z\s]{2,}$" />
-              <p class="invalid">The input value is shorter than 2 characters</p>
-            </label>
+        <h3 class="subheader">PRIMARY ACCOUNT INFO</h3>
+        <div class="info-cards-wrapper">
+          <div class="info-card">
+            <h4 class="info-card__heading">NAME,CONTACT INFO & PASSWORD</h4>
+            <p class="info-card__content">Mostafa Refaat<br />mostafaelhussainy22@gmail.com<br />8508776652</p>
+            <a href="">
+              <button class="button--regular button--secondary--ghost">MANAGE ACCOUNT INFO</button>
+            </a>
           </div>
-          <label class="company-label">
-            Company (optional)
-            <input type="text" />
-          </label>
-          <div class="row">
-            <label>
-              Address line 1
-              <input type="text" required />
-              <p class="invalid">This is a required field</p>
-            </label>
-            <label>
-              Address line 2 (optional)
-              <input type="text" />
-            </label>
+          <div class="info-card">
+            <h4 class="info-card__heading">NAME,CONTACT INFO & PASSWORD</h4>
+            <p class="info-card__content">Mostafa Refaat<br />mostafaelhussainy22@gmail.com<br />8508776652</p>
+            <a href="">
+              <button class="button--regular button--secondary--ghost">MANAGE ACCOUNT INFO</button>
+            </a>
           </div>
-          <div class="row">
-            <label>
-              Country
-              <select select="country" aim="billing"></select>
-            </label>
-            <label>
-              City
-              <input type="text" required />
-              <p class="invalid">This is a required field</p>
-            </label>
+          <div class="info-card">
+            <h4 class="info-card__heading">DEFAULT SHIPPING ADDRESS</h4>
+            <p class="info-card__content">
+              Mostafa Refaat<br />1518 Stellar Dr, Kenai, Alaska 99611, USA <br />Kenai,99611
+            </p>
+            <a href="">
+              <button class="button--regular button--secondary--ghost">MANAGE ADDRESS BOOK</button>
+            </a>
           </div>
-          <div class="row">
-            <label>
-              State
-              <select select="province" target="billing"></select>
-            </label>
-            <label>
-              Zip/postal code
-              <input type="text" required />
-              <p class="invalid">This is a required field</p>
-            </label>
-          </div>
-          <label>
-            Phone
-            <input type="tel" required />
-            <p class="invalid">Type only numbers</p>
-          </label>
         </div>
-        <h3 class="subheader">SIGN IN DETAILS</h3>
-        <label>
-          Email
-          <input type="email" required pattern="[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,}" />
-          <p class="invalid">You have not given a correct email address</p>
-        </label>
-        <div class="row user-checkout">
-          <label>
-            Password
-            <input type="password" main required pattern="[\w\W]{5,}" />
-            <p class="invalid">The input value is shorter than 5 characters</p>
-          </label>
-          <label>
-            Retype Password
-            <input type="password" retyped required pattern="[\w\W]{5,}" />
-            <p class="invalid">The input value is shorter than 5 characters</p>
-          </label>
+        <h3 class="subheader">YOUR ORDER HISTORY</h3>
+        <div class="info-cards-wrapper">
+          <div class="info-card">
+            <p class="info-card__content">You don't have any order yet</p>
+            <a href="">
+              <button class="button--regular button--secondary--ghost">VIEW MORE ORDERS</button>
+            </a>
+          </div>
         </div>
-        <label>
-          <input type="checkbox" name="newsletter-subscription" />
-          Yes, subscribe me to Best Pro Lighting's newsletter. Don’t worry, you can unsubscribe at any time.
-        </label>
-        <button class="button--secondary button--regular">REGISTER</button>
       </div>
-    </form>
+    </main>
     <!-- M A I N    L A Y O U T    E N D -->
 
     <!-- F O O T E R    S T A R T -->
@@ -608,9 +563,6 @@
       </div>
     </footer>
     <!-- F O O T E R    E N D -->
-    <script src="../assets/JS/pages/signup/signup.js"></script>
-    <script src="../assets/JS/tools/select-country-province.js"></script>
-    <script src="../assets/JS/tools/error-msg.js"></script>
     <script src="../assets/JS/UI-components/dropdown.js"></script>
     <script src="../assets/JS/UI-components/header.js"></script>
   </body>
