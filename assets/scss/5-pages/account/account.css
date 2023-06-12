@@ -14,7 +14,7 @@
 /* S C R O L L    B A R */
 /* M A I N    S T Y L E */
 main .container {
-  width: 1024px;
+  max-width: 1024px;
 }
 main .info-cards-wrapper {
   display: flex;
@@ -23,12 +23,22 @@ main .info-cards-wrapper {
   flex-direction: row;
   -moz-column-gap: 24px;
        column-gap: 24px;
-  row-gap: unset;
+  row-gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
 }
-main .info-cards-wrapper .info-cards {
+main .info-cards-wrapper:last-of-type {
+  margin-bottom: 120px;
+}
+main .info-cards-wrapper .info-card {
   flex-basis: calc((100% - (2) * 24px) / 3);
 }
-main .info-cards-wrapper .info-cards__heading {
+@media (max-width: 576px) {
+  main .info-cards-wrapper .info-card {
+    flex-basis: calc((100% - (0) * 24px) / 1);
+  }
+}
+main .info-cards-wrapper .info-card__heading {
   /*FONTS*/
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -38,11 +48,19 @@ main .info-cards-wrapper .info-cards__heading {
   /*BOX*/
   margin-bottom: 10px;
 }
-main .info-cards-wrapper .info-cards__content {
+main .info-cards-wrapper .info-card__content {
   /*FONTS*/
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+main .info-cards-wrapper .info-card a button {
+  /*FONTS*/
+  /*BOX*/
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
 }/*# sourceMappingURL=account.css.map */
