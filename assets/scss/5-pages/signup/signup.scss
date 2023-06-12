@@ -1,0 +1,49 @@
+@import '../../helper.scss';
+
+/* M A I N    S T Y L E */
+#create-account-form {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    .row {
+      column-gap: 24px;
+      @include respond-to(md) {
+        flex-direction: column;
+        row-gap: 24px;
+        margin-bottom: 30px;
+      }
+    }
+    @include respond-to(md) {
+      label {
+        margin-bottom: 0;
+        &:has(input[type='email']) {
+          margin-bottom: 30px;
+        }
+        & input,
+        & select {
+          max-width: unset;
+        }
+      }
+    }
+    .company-label input {
+      max-width: unset;
+      @include respond-to(md) {
+        margin-bottom: 30px;
+      }
+    }
+    .shipping-info {
+      margin-bottom: 45px;
+    }
+    label:has(input[type='checkbox']) {
+      align-items: flex-start;
+      column-gap: 10px;
+      margin-bottom: 30px;
+      input {
+        margin-top: 4px;
+      }
+    }
+    button {
+      margin-bottom: 120px;
+    }
+  }
+}

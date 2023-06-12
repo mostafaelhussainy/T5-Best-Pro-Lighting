@@ -1,0 +1,64 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+/* M A I N    S T Y L E */
+#create-account-form .container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+#create-account-form .container .row {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media (max-width: 768px) {
+  #create-account-form .container .row {
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  #create-account-form .container label {
+    margin-bottom: 0;
+  }
+  #create-account-form .container label:has(input[type=email]) {
+    margin-bottom: 30px;
+  }
+  #create-account-form .container label input, #create-account-form .container label select {
+    max-width: unset;
+  }
+}
+#create-account-form .container .company-label input {
+  max-width: unset;
+}
+@media (max-width: 768px) {
+  #create-account-form .container .company-label input {
+    margin-bottom: 30px;
+  }
+}
+#create-account-form .container .shipping-info {
+  margin-bottom: 45px;
+}
+#create-account-form .container label:has(input[type=checkbox]) {
+  align-items: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-bottom: 30px;
+}
+#create-account-form .container label:has(input[type=checkbox]) input {
+  margin-top: 4px;
+}
+#create-account-form .container button {
+  margin-bottom: 120px;
+}/*# sourceMappingURL=signup.css.map */

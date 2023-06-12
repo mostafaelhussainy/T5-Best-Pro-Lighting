@@ -75,6 +75,8 @@ label:has(input[type='checkbox'], input[type='radio']) {
 }
 label:has(input[type='checkbox']) {
   @include flex(flex-start, center, row, 6px);
+  white-space: normal;
+
   input {
     /*BOX*/
     width: 18px;
