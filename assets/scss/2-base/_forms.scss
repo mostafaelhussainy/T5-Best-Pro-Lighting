@@ -12,7 +12,7 @@ label {
   .invalid {
     display: none;
     position: absolute;
-    bottom: -25px;
+    top: 90px;
     color: red;
     @include respond-to(lg) {
       font-size: 12px;
@@ -67,6 +67,7 @@ label:has(input[type='checkbox'], input[type='radio']) {
     /*BOX*/
     width: 18px;
     height: 18px;
+    padding-left: 16px;
     /*APPEARANCE*/
     &:checked {
       appearance: $Secondary;

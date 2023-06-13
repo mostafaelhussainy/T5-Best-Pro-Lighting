@@ -196,7 +196,7 @@ label:last-of-type {
 label .invalid {
   display: none;
   position: absolute;
-  bottom: -25px;
+  top: 90px;
   color: red;
 }
 @media (max-width: 992px) {
@@ -252,6 +252,7 @@ label:has(input[type=checkbox], input[type=radio]) input {
   /*BOX*/
   width: 18px;
   height: 18px;
+  padding-left: 16px;
   /*APPEARANCE*/
 }
 label:has(input[type=checkbox], input[type=radio]) input:checked {
@@ -1424,6 +1425,153 @@ P L U S - M I N U S
 </div>
 </div>
 */
+#account-layout {
+  margin-bottom: 80px;
+}
+#account-layout .container h2 {
+  /*FONT*/
+  padding-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 76px;
+  color: #253241;
+  /*BOX*/
+  margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  #account-layout .container h2 {
+    display: none;
+  }
+}
+#account-layout .container .main-row {
+  /*BOX*/
+  padding: 30px;
+}
+@media (max-width: 992px) {
+  #account-layout .container .main-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+#account-layout .container .main-row ul {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+#account-layout .container .main-row ul:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#account-layout .container .main-row ul h4,
+#account-layout .container .main-row ul li a {
+  /*FONT*/
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#account-layout .container .main-row ul h4 {
+  /*FONT*/
+  color: #8f8f8f;
+  /*BOX*/
+  margin-bottom: 18px;
+}
+#account-layout .container .main-row ul li {
+  /*BOX*/
+  margin-bottom: 18px;
+}
+#account-layout .container .main-row ul li:last-of-type {
+  margin-bottom: 0;
+}
+#account-layout .container .main-row ul li a {
+  /*FONT*/
+  color: #484848;
+}
+#account-layout .container .main-row .dropdown-parent {
+  display: none;
+}
+@media (max-width: 992px) {
+  #account-layout .container .main-row .dropdown-parent {
+    display: block;
+  }
+  #account-layout .container .main-row .dropdown-parent .dropdown-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: #253241;
+    padding-bottom: 10px;
+  }
+  #account-layout .container .main-row .dropdown-parent .dropdown-wrapper {
+    padding-top: 10px;
+  }
+}
+#account-layout .container .main-row aside {
+  /*BOX*/
+  width: 20.2564%;
+  padding: 45px 30px 0 0;
+}
+@media (max-width: 992px) {
+  #account-layout .container .main-row aside {
+    display: none;
+  }
+}
+#account-layout .container .main-row aside h3 {
+  /*FONT*/
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  /*BOX*/
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+#account-layout .container .main-row form {
+  width: 65%;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+@media (max-width: 992px) {
+  #account-layout .container .main-row form {
+    width: 100%;
+    padding: 0;
+  }
+}
+#account-layout .container .main-row form h1 {
+  /*FONT*/
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: unset;
+  color: #253241;
+  /*BOX*/
+  margin-bottom: 30px;
+}
+#account-layout .container .main-row form .row {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+#account-layout .container .main-row form label {
+  /*FONT*/
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #253241;
+  /*BOX*/
+  row-gap: 4px;
+  width: 100%;
+  max-width: 475px;
+  margin-bottom: 30px;
+}
+#account-layout .container .main-row form label input {
+  max-width: unset;
+}
+
 /* V E N D O R S */
 @font-face {
   font-family: swiper-icons;
