@@ -1,0 +1,71 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+/* M A I N    S T Y L E */
+#account-layout #main-section .address-wrapper {
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+#account-layout #main-section .address-wrapper:last-of-type {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #account-layout #main-section .address-wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+#account-layout #main-section .address-wrapper .col {
+  row-gap: 10px;
+}
+@media (max-width: 768px) {
+  #account-layout #main-section .address-wrapper .col {
+    width: 100%;
+  }
+}
+#account-layout #main-section .address-wrapper .col button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+  padding: 0;
+  width: 196px;
+}
+@media (max-width: 768px) {
+  #account-layout #main-section .address-wrapper .col button {
+    width: 100%;
+  }
+}
+#account-layout #main-section .address-wrapper .col .button--secondary {
+  background-image: url("../../../icons/category__filter__checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: 50px 50%;
+}
+@media (max-width: 768px) {
+  #account-layout #main-section .address-wrapper .col .button--secondary {
+    background-position: 40% 50%;
+  }
+}
+@media (max-width: 576px) {
+  #account-layout #main-section .address-wrapper .col .button--secondary {
+    background-position: 35% 50%;
+  }
+}
+@media (max-width: 768px) {
+  #account-layout #main-section button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=account-addresses.css.map */

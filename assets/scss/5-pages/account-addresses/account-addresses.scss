@@ -1,0 +1,53 @@
+@import '../../helper.scss';
+
+/* M A I N    S T Y L E */
+#account-layout {
+  #main-section {
+    .address-wrapper {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+      @include respond-to(md) {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+      .col {
+        row-gap: 10px;
+        @include respond-to(md) {
+          width: 100%;
+        }
+        button {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 34px;
+          padding: 0;
+          width: 196px;
+          @include respond-to(md) {
+            width: 100%;
+          }
+        }
+        .button--secondary {
+          background-image: url('../../../icons/category__filter__checkmark.svg');
+          background-repeat: no-repeat;
+          background-position: 50px 50%;
+          @include respond-to(md) {
+            background-position: 40% 50%;
+          }
+          @include respond-to(sm) {
+            background-position: 35% 50%;
+          }
+        }
+      }
+    }
+    button {
+      @include respond-to(md) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@import '../../helper.scss';
+
+#account-layout .container .main-row #main-section {
+  /* S A V E D    C A R D S    S T Y L E */
+  #saved-cards .credit-cards-wrapper {
+    /*BOX*/
+    width: 100%;
+    margin-bottom: 60px;
+    /*FLEX*/
+    column-gap: 24px;
+    row-gap: 24px;
+    @include respond-to(lg) {
+      flex-direction: column;
+    }
+    .credit-card {
+      /*BOX*/
+      width: calc(50% - 12px);
+      @include respond-to(lg) {
+        width: 100%;
+      }
+      &__details {
+        /*BOX*/
+        padding: 30px 24px;
+        /*FLEX*/
+        @include flex(flex-start, flex-start, column, unset, 30px);
+        .row {
+          /*BOX*/
+          width: 100%;
+          /*FLEX*/
+          justify-content: space-between;
+        }
+        .col {
+          label,
+          span {
+            /*FONT*/
+            white-space: nowrap;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+          }
+          label {
+            /*FONT*/
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            @include respond-to(md) {
+              font-size: 15.75px;
+              line-height: 24px;
+            }
+            /*COLOR*/
+            color: #8f8f8f;
+            /*BOX*/
+            margin-bottom: 0;
+          }
+          span {
+            /*FONT*/
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 32px;
+            @include respond-to(md) {
+              font-size: 18px;
+              line-height: 30px;
+            }
+            /*COLOR*/
+            color: #253241;
+          }
+        }
+      }
+      &__controls {
+        /*BOX*/
+        padding: 10px 24px;
+        button {
+          /*FONT*/
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          white-space: nowrap;
+          font-family: 'Poppins', sans-serif;
+          /*BOX*/
+          width: 100%;
+          padding: 0;
+          /*COLOR*/
+          color: #253241;
+        }
+      }
+    }
+  }
+  /* A D D     N E W    C R E D I T    C A R D    F O R M    S T Y L E */
+  #add-new-card {
+    .row {
+      label {
+        width: calc(50% - 12px);
+        .select-row {
+          width: 100%;
+          column-gap: 14px;
+          select {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .address-info {
+      /*POSITION*/
+      position: relative;
+      /*BOX*/
+      margin: 30px 0;
+      padding: 50px 27px 27px;
+      &__controls {
+        /*POSITION*/
+        position: absolute;
+        inset: 0 auto auto 50%;
+        transform: translate(-50%, -50%);
+        /*FLEX*/
+        @include flex(flex-start, flex-start, row, 24px);
+        /*COLOR*/
+        background-color: #fff;
+        button {
+          /*FONT*/
+          white-space: nowrap;
+        }
+      }
+      &__address-book {
+        /*FLEX*/
+        @include flex(space-between, flex-start, row, unset, 30px);
+        flex-wrap: wrap;
+        label {
+          /*BOX*/
+          width: 50%;
+          margin-bottom: 0;
+          /*FLEX*/
+          align-items: flex-start;
+          column-gap: 12px;
+          input {
+            /*BOX*/
+            margin-top: 8px;
+          }
+        }
+      }
+      &__actions {
+        column-gap: 24px;
+      }
+    }
+  }
+}

@@ -29,7 +29,11 @@
 }
 
 .none {
-  display: none;
+  display: none !important;
+}
+
+.button-disabled {
+  pointer-events: none;
 }
 
 .b {

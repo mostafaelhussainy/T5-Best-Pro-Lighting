@@ -1,0 +1,180 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+#account-layout .container .main-row #main-section {
+  /* S A V E D    C A R D S    S T Y L E */
+  /* A D D     N E W    C R E D I T    C A R D    F O R M    S T Y L E */
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper {
+  /*BOX*/
+  width: 100%;
+  margin-bottom: 60px;
+  /*FLEX*/
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 24px;
+}
+@media (max-width: 992px) {
+  #account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper {
+    flex-direction: column;
+  }
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card {
+  /*BOX*/
+  width: calc(50% - 12px);
+}
+@media (max-width: 992px) {
+  #account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card {
+    width: 100%;
+  }
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details {
+  /*BOX*/
+  padding: 30px 24px;
+  /*FLEX*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 30px;
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details .row {
+  /*BOX*/
+  width: 100%;
+  /*FLEX*/
+  justify-content: space-between;
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details .col label,
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details .col span {
+  /*FONT*/
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details .col label {
+  /*FONT*/
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /*COLOR*/
+  color: #8f8f8f;
+  /*BOX*/
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  #account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details .col label {
+    font-size: 15.75px;
+    line-height: 24px;
+  }
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details .col span {
+  /*FONT*/
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  /*COLOR*/
+  color: #253241;
+}
+@media (max-width: 768px) {
+  #account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__details .col span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__controls {
+  /*BOX*/
+  padding: 10px 24px;
+}
+#account-layout .container .main-row #main-section #saved-cards .credit-cards-wrapper .credit-card__controls button {
+  /*FONT*/
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  /*BOX*/
+  width: 100%;
+  padding: 0;
+  /*COLOR*/
+  color: #253241;
+}
+#account-layout .container .main-row #main-section #add-new-card .row label {
+  width: calc(50% - 12px);
+}
+#account-layout .container .main-row #main-section #add-new-card .row label .select-row {
+  width: 100%;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+#account-layout .container .main-row #main-section #add-new-card .row label .select-row select {
+  width: 50%;
+}
+#account-layout .container .main-row #main-section #add-new-card .address-info {
+  /*POSITION*/
+  position: relative;
+  /*BOX*/
+  margin: 30px 0;
+  padding: 50px 27px 27px;
+}
+#account-layout .container .main-row #main-section #add-new-card .address-info__controls {
+  /*POSITION*/
+  position: absolute;
+  inset: 0 auto auto 50%;
+  transform: translate(-50%, -50%);
+  /*FLEX*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: unset;
+  /*COLOR*/
+  background-color: #fff;
+}
+#account-layout .container .main-row #main-section #add-new-card .address-info__controls button {
+  /*FONT*/
+  white-space: nowrap;
+}
+#account-layout .container .main-row #main-section #add-new-card .address-info__address-book {
+  /*FLEX*/
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+#account-layout .container .main-row #main-section #add-new-card .address-info__address-book label {
+  /*BOX*/
+  width: 50%;
+  margin-bottom: 0;
+  /*FLEX*/
+  align-items: flex-start;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+#account-layout .container .main-row #main-section #add-new-card .address-info__address-book label input {
+  /*BOX*/
+  margin-top: 8px;
+}
+#account-layout .container .main-row #main-section #add-new-card .address-info__actions {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}/*# sourceMappingURL=account-cards.css.map */

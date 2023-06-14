@@ -2,7 +2,7 @@
   margin-bottom: 80px;
   .container {
     h2 {
-      @include respond-to(lg) {
+      @include respond-to(xxl) {
         display: none;
       }
       /*FONT*/
@@ -13,11 +13,9 @@
       text-transform: uppercase;
       line-height: 76px;
       color: #253241;
-      /*BOX*/
-      margin-bottom: 30px;
     }
     .main-row {
-      @include respond-to(lg) {
+      @include respond-to(xxl) {
         flex-direction: column;
         row-gap: 30px;
       }
@@ -58,7 +56,7 @@
       }
       .dropdown-parent {
         display: none;
-        @include respond-to(lg) {
+        @include respond-to(xxl) {
           display: block;
           .dropdown-btn {
             font-family: 'Poppins', sans-serif;
@@ -75,7 +73,7 @@
         }
       }
       aside {
-        @include respond-to(lg) {
+        @include respond-to(xxl) {
           display: none;
         }
         /*BOX*/
@@ -92,11 +90,11 @@
           margin-bottom: 30px;
         }
       }
-      form {
+      #main-section {
         width: 65%;
         margin: 0 auto;
         padding: 45px 0;
-        @include respond-to(lg) {
+        @include respond-to(xxl) {
           width: 100%;
           padding: 0;
         }
@@ -127,7 +125,8 @@
           width: 100%;
           max-width: 475px;
           margin-bottom: 30px;
-          input {
+          input,
+          select {
             max-width: unset;
           }
         }

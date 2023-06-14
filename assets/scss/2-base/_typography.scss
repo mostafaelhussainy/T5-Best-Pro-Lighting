@@ -145,14 +145,14 @@ h6 {
 }
 
 .tx--success {
-  color: $Success;
+  color: $Success !important;
 }
 
 .Secondary {
-  color: $Secondary;
+  color: $Secondary !important;
 }
 .Primary {
-  color: $Primary;
+  color: $Primary !important;
 }
 
 .subheader {
@@ -167,4 +167,16 @@ h6 {
   border-bottom: 1px solid #ecedee;
   margin-bottom: 27px;
   padding-bottom: 9px;
+}
+
+address {
+  /*FONT*/
+  white-space: nowrap;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  /*COLOR*/
+  color: #253241;
 }

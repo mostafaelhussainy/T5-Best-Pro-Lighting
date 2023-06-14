@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Pro Lighting</title>
     <link rel="stylesheet" href="../assets/scss/global.css" />
-    <link rel="stylesheet" href="../assets/scss/5-pages/account/account.css" />
+    <link rel="stylesheet" href="../assets/scss/5-pages/account-cards/account-cards.css" />
     <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon" />
   </head>
 
@@ -316,48 +316,278 @@
           <h5 class="text-icon-hover__effect">HOME</h5>
         </a>
         <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
+        <a href="/pages/account.html">
+          <h5 class="text-icon-hover__effect">ACCOUNT</h5>
+        </a>
+        <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
         <a href="/">
-          <h5 class="active">OVERVIEW</h5>
+          <h5 class="active">PAYMENT INFO</h5>
         </a>
       </div>
     </section>
     <!-- B R E A D    C R U M B    E N D -->
 
     <!-- M A I N    L A Y O U T    S T A R T -->
-    <main>
-      <div class="container">
-        <h3 class="subheader">PRIMARY ACCOUNT INFO</h3>
-        <div class="info-cards-wrapper">
-          <div class="info-card">
-            <h4 class="info-card__heading">NAME,CONTACT INFO & PASSWORD</h4>
-            <p class="info-card__content">Mostafa Refaat<br />mostafaelhussainy22@gmail.com<br />8508776652</p>
-            <a href="/pages/account-info.html">
-              <button class="button--regular button--secondary--ghost">MANAGE ACCOUNT INFO</button>
-            </a>
+    <main id="account-layout">
+      <div class="container b">
+        <h2 class="b-b">ACCOUNT</h2>
+        <div class="main-row row">
+          <div class="dropdown-parent">
+            <span class="dropdown-btn b-b" data-dropdown="account-menu-dropdown">
+              ACCOUNT MENU
+              <img src="../assets/icons/account__dropdown-arrow.svg" id="icon-account-menu-dropdown" />
+            </span>
+            <div class="dropdown-wrapper" id="dropdown-account-menu-dropdown">
+              <ul class="b-b">
+                <h4>Orders</h4>
+                <li>
+                  <a href="/pages/account-orders.html" class="text-icon-hover__effect"> Order History </a>
+                </li>
+              </ul>
+              <ul>
+                <h4>Account</h4>
+                <li>
+                  <a href="/pages/account.html" class="text-icon-hover__effect"> Profile </a>
+                </li>
+                <li>
+                  <a href="/pages/account-addresses.html" class="text-icon-hover__effect"> Addresses </a>
+                </li>
+                <li>
+                  <a class="Secondary"> Saved Cards </a>
+                </li>
+                <li>
+                  <a class="text-icon-hover__effect"> Wishlists </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="info-card">
-            <h4 class="info-card__heading">DEFAULT SHIPPING ADDRESS</h4>
-            <p class="info-card__content">
-              Mostafa Refaat<br />1518 Stellar Dr, Kenai, Alaska 99611, USA <br />Kenai,99611
-            </p>
-            <a href="/pages/account-addresses.html">
-              <button class="button--regular button--secondary--ghost">MANAGE ADDRESS BOOK</button>
-            </a>
-          </div>
-          <div class="info-card">
-            <h4 class="info-card__heading">PAYMENTS</h4>
-            <a href="/pages/account-payment.html">
-              <button class="button--regular button--secondary--ghost">MANAGE PAYMENTS</button>
-            </a>
-          </div>
-        </div>
-        <h3 class="subheader">YOUR ORDER HISTORY</h3>
-        <div class="info-cards-wrapper">
-          <div class="info-card">
-            <p class="info-card__content">You don't have any order yet</p>
-            <a href="/pages/account-orders.html">
-              <button class="button--regular button--secondary--ghost">VIEW MORE ORDERS</button>
-            </a>
+          <aside class="b-r">
+            <h3 class="b-b">Overview</h3>
+            <ul class="b-b">
+              <h4>Orders</h4>
+              <li>
+                <a href="/pages/account-orders.html" class="text-icon-hover__effect"> Order History </a>
+              </li>
+            </ul>
+            <ul>
+              <h4>Account</h4>
+              <li>
+                <a href="/pages/account.html" class="text-icon-hover__effect"> Profile </a>
+              </li>
+              <li>
+                <a href="/pages/account-addresses.html" class="text-icon-hover__effect"> Addresses </a>
+              </li>
+              <li>
+                <a class="Secondary"> Saved Cards </a>
+              </li>
+              <li>
+                <a class="text-icon-hover__effect"> Wishlists </a>
+              </li>
+            </ul>
+          </aside>
+          <div id="main-section">
+            <div id="saved-cards">
+              <h1>SAVED CARDS</h1>
+              <div class="credit-cards-wrapper row">
+                <div class="credit-card b">
+                  <div class="credit-card__details b-b">
+                    <div class="col">
+                      <label>
+                        NAME ON CARD
+                        <span>Mostafa Elhussainy</span>
+                      </label>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label>
+                          CARD NUMBER:
+                          <span>XXXXXXXXXXXX6623</span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label>
+                          EXP. DATE:
+                          <span>01-28</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label>
+                        BILLING ADDRESS:
+                        <span>
+                          Mostafa Elhussainy<br />
+                          11126 McCormick Road<br />
+                          Baltimore, Alabama, 21031<br />
+                          United States
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="credit-card__controls">
+                    <button class="text-icon-hover__effect">DELETE</button>
+                  </div>
+                </div>
+                <div class="credit-card b">
+                  <div class="credit-card__details b-b">
+                    <div class="col">
+                      <label>
+                        NAME ON CARD
+                        <span>Mostafa Elhussainy</span>
+                      </label>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label>
+                          CARD NUMBER:
+                          <span>XXXXXXXXXXXX6623</span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label>
+                          EXP. DATE:
+                          <span>01-28</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label>
+                        BILLING ADDRESS:
+                        <span>
+                          Mostafa Elhussainy<br />
+                          11126 McCormick Road<br />
+                          Baltimore, Alabama, 21031<br />
+                          United States
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="credit-card__controls">
+                    <button class="text-icon-hover__effect">DELETE</button>
+                  </div>
+                </div>
+              </div>
+              <button class="button--secondary button--regular" id="add-new-credit-card">ADD A NEW CREDIT CARD</button>
+            </div>
+            <form id="add-new-card" class="none">
+              <h1>ADD A NEW CREDIT CARD</h1>
+              <div class="row">
+                <label>
+                  Card number
+                  <input type="text" name="card-name" pattern="^\d{12,19}$" required />
+                  <p class="invalid">The input value must be numbers and between 12 to 19 on length</p>
+                </label>
+                <label>
+                  Name on card
+                  <input type="text" name="card-name" pattern="[\w\W]{2,}" required />
+                  <p class="invalid">The input value is shorter than 2 characters</p>
+                </label>
+              </div>
+              <div class="row">
+                <label>
+                  Exp. date
+                  <div class="select-row">
+                    <select credit-card-expiry-month name=""></select>
+                    <select credit-card-expiry-year name=""></select>
+                  </div>
+                </label>
+                <label>
+                  CCV
+                  <input type="text" name="" pattern="^[0-9]{3,4}$" required />
+                  <p class="invalid">The input value must be between 3 and 4 numbers</p>
+                </label>
+              </div>
+              <div class="address-info b">
+                <div class="address-info__controls">
+                  <button class="button--secondary button--regular button-disabled" id="address-book" type="button">
+                    SELECT FROM ADDRESS BOOK
+                  </button>
+                  <button class="button--primary--ghost button--regular" id="new-address" type="button">
+                    ADD NEW ADDRESS
+                  </button>
+                </div>
+                <div class="address-info__address-book">
+                  <label>
+                    <input type="radio" name="address" />
+                    Mostafa Elhussainy<br />
+                    11126 McCormick Road<br />
+                    Baltimore, 21031, AL<br />
+                    United States
+                  </label>
+                  <label>
+                    <input type="radio" name="address" />
+                    Mostafa Elhussainy<br />
+                    11126 McCormick Road<br />
+                    Baltimore, 21031, AL<br />
+                    United States
+                  </label>
+                  <label>
+                    <input type="radio" name="address" />
+                    Mostafa Elhussainy<br />
+                    11126 McCormick Road<br />
+                    Baltimore, 21031, AL<br />
+                    United States
+                  </label>
+                  <label>
+                    <input type="radio" name="address" />
+                    Mostafa Elhussainy<br />
+                    11126 McCormick Road<br />
+                    Baltimore, 21031, AL<br />
+                    United States
+                  </label>
+                </div>
+                <div class="address-info__new-address none">
+                  <div class="row">
+                    <label>
+                      First name
+                      <input type="text" required pattern="^[a-zA-Z\s]{2,}$" />
+                      <p class="invalid">The input value is shorter than 2 characters</p>
+                    </label>
+                    <label>
+                      Last name
+                      <input type="text" required pattern="^[a-zA-Z\s]{2,}$" />
+                      <p class="invalid">The input value is shorter than 2 characters</p>
+                    </label>
+                  </div>
+                  <div class="row">
+                    <label>
+                      Address line 1
+                      <input type="text" required />
+                      <p class="invalid">This is a required field</p>
+                    </label>
+                    <label>
+                      Address line 2 (optional)
+                      <input type="text" />
+                    </label>
+                  </div>
+                  <div class="row">
+                    <label>
+                      Country
+                      <select select="country" aim="billing"></select>
+                    </label>
+                    <label>
+                      City
+                      <input type="text" required />
+                      <p class="invalid">This is a required field</p>
+                    </label>
+                  </div>
+                  <div class="row">
+                    <label>
+                      State
+                      <select select="province" target="billing"></select>
+                    </label>
+                    <label>
+                      Zip/postal code
+                      <input type="text" required />
+                      <p class="invalid">This is a required field</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="address-info__actions row">
+                <button class="button--secondary button--regular" type="submit">SAVE CARD</button>
+                <button class="button--secondary--ghost button--regular" type="button" id="cancel">CANCEL</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -562,6 +792,9 @@
       </div>
     </footer>
     <!-- F O O T E R    E N D -->
+    <script src="../assets/JS/pages/account-cards/account-cards.js"></script>
+    <script src="../assets/JS/tools/select-country-province.js"></script>
+    <script src="../assets/JS/tools/error-msg.js"></script>
     <script src="../assets/JS/UI-components/dropdown.js"></script>
     <script src="../assets/JS/UI-components/header.js"></script>
   </body>

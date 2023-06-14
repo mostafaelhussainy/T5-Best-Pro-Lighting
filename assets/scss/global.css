@@ -33,7 +33,11 @@
 }
 
 .none {
-  display: none;
+  display: none !important;
+}
+
+.button-disabled {
+  pointer-events: none;
 }
 
 .b {
@@ -196,7 +200,7 @@ label:last-of-type {
 label .invalid {
   display: none;
   position: absolute;
-  top: 90px;
+  top: 80px;
   color: red;
 }
 @media (max-width: 992px) {
@@ -535,15 +539,15 @@ h6 {
 }
 
 .tx--success {
-  color: #85b040;
+  color: #85b040 !important;
 }
 
 .Secondary {
-  color: #f26d21;
+  color: #f26d21 !important;
 }
 
 .Primary {
-  color: #253242;
+  color: #253242 !important;
 }
 
 .subheader {
@@ -558,6 +562,18 @@ h6 {
   border-bottom: 1px solid #ecedee;
   margin-bottom: 27px;
   padding-bottom: 9px;
+}
+
+address {
+  /*FONT*/
+  white-space: nowrap;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  /*COLOR*/
+  color: #253241;
 }
 
 /* C O M P O N E N T S */
@@ -1437,10 +1453,8 @@ P L U S - M I N U S
   text-transform: uppercase;
   line-height: 76px;
   color: #253241;
-  /*BOX*/
-  margin-bottom: 30px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   #account-layout .container h2 {
     display: none;
   }
@@ -1449,7 +1463,7 @@ P L U S - M I N U S
   /*BOX*/
   padding: 30px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   #account-layout .container .main-row {
     flex-direction: column;
     row-gap: 30px;
@@ -1491,7 +1505,7 @@ P L U S - M I N U S
 #account-layout .container .main-row .dropdown-parent {
   display: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   #account-layout .container .main-row .dropdown-parent {
     display: block;
   }
@@ -1513,7 +1527,7 @@ P L U S - M I N U S
   width: 20.2564%;
   padding: 45px 30px 0 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   #account-layout .container .main-row aside {
     display: none;
   }
@@ -1528,18 +1542,18 @@ P L U S - M I N U S
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-#account-layout .container .main-row form {
+#account-layout .container .main-row #main-section {
   width: 65%;
   margin: 0 auto;
   padding: 45px 0;
 }
-@media (max-width: 992px) {
-  #account-layout .container .main-row form {
+@media (max-width: 1440px) {
+  #account-layout .container .main-row #main-section {
     width: 100%;
     padding: 0;
   }
 }
-#account-layout .container .main-row form h1 {
+#account-layout .container .main-row #main-section h1 {
   /*FONT*/
   font-family: "Poppins", sans-serif;
   font-size: 22px;
@@ -1551,11 +1565,11 @@ P L U S - M I N U S
   /*BOX*/
   margin-bottom: 30px;
 }
-#account-layout .container .main-row form .row {
+#account-layout .container .main-row #main-section .row {
   -moz-column-gap: 24px;
        column-gap: 24px;
 }
-#account-layout .container .main-row form label {
+#account-layout .container .main-row #main-section label {
   /*FONT*/
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -1568,7 +1582,8 @@ P L U S - M I N U S
   max-width: 475px;
   margin-bottom: 30px;
 }
-#account-layout .container .main-row form label input {
+#account-layout .container .main-row #main-section label input,
+#account-layout .container .main-row #main-section label select {
   max-width: unset;
 }
 

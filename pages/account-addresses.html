@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Pro Lighting</title>
     <link rel="stylesheet" href="../assets/scss/global.css" />
-    <link rel="stylesheet" href="../assets/scss/5-pages/account/account.css" />
+    <link rel="stylesheet" href="../assets/scss/5-pages/account-addresses/account-addresses.css" />
     <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon" />
   </head>
 
@@ -316,48 +316,165 @@
           <h5 class="text-icon-hover__effect">HOME</h5>
         </a>
         <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
+        <a href="/pages/account.html">
+          <h5 class="text-icon-hover__effect">ACCOUNT</h5>
+        </a>
+        <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
         <a href="/">
-          <h5 class="active">OVERVIEW</h5>
+          <h5 class="active">ACCOUNT SETTINGS</h5>
         </a>
       </div>
     </section>
     <!-- B R E A D    C R U M B    E N D -->
 
     <!-- M A I N    L A Y O U T    S T A R T -->
-    <main>
-      <div class="container">
-        <h3 class="subheader">PRIMARY ACCOUNT INFO</h3>
-        <div class="info-cards-wrapper">
-          <div class="info-card">
-            <h4 class="info-card__heading">NAME,CONTACT INFO & PASSWORD</h4>
-            <p class="info-card__content">Mostafa Refaat<br />mostafaelhussainy22@gmail.com<br />8508776652</p>
-            <a href="/pages/account-info.html">
-              <button class="button--regular button--secondary--ghost">MANAGE ACCOUNT INFO</button>
-            </a>
+    <main id="account-layout">
+      <div class="container b">
+        <h2 class="b-b">ACCOUNT</h2>
+        <div class="main-row row">
+          <div class="dropdown-parent">
+            <span class="dropdown-btn b-b" data-dropdown="account-menu-dropdown">
+              ACCOUNT MENU
+              <img src="../assets/icons/account__dropdown-arrow.svg" id="icon-account-menu-dropdown" />
+            </span>
+            <div class="dropdown-wrapper" id="dropdown-account-menu-dropdown">
+              <ul class="b-b">
+                <h4>Orders</h4>
+                <li>
+                  <a href="/pages/account-orders.html" class="text-icon-hover__effect"> Order History </a>
+                </li>
+              </ul>
+              <ul>
+                <h4>Account</h4>
+                <li>
+                  <a href="/pages/account.html" class="text-icon-hover__effect"> Profile </a>
+                </li>
+                <li>
+                  <a class="Secondary"> Addresses </a>
+                </li>
+                <li>
+                  <a href="/pages/account-cards.html" class="text-icon-hover__effect"> Saved Cards </a>
+                </li>
+                <li>
+                  <a class="text-icon-hover__effect"> Wishlists </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="info-card">
-            <h4 class="info-card__heading">DEFAULT SHIPPING ADDRESS</h4>
-            <p class="info-card__content">
-              Mostafa Refaat<br />1518 Stellar Dr, Kenai, Alaska 99611, USA <br />Kenai,99611
-            </p>
-            <a href="/pages/account-addresses.html">
-              <button class="button--regular button--secondary--ghost">MANAGE ADDRESS BOOK</button>
-            </a>
-          </div>
-          <div class="info-card">
-            <h4 class="info-card__heading">PAYMENTS</h4>
-            <a href="/pages/account-payment.html">
-              <button class="button--regular button--secondary--ghost">MANAGE PAYMENTS</button>
-            </a>
-          </div>
-        </div>
-        <h3 class="subheader">YOUR ORDER HISTORY</h3>
-        <div class="info-cards-wrapper">
-          <div class="info-card">
-            <p class="info-card__content">You don't have any order yet</p>
-            <a href="/pages/account-orders.html">
-              <button class="button--regular button--secondary--ghost">VIEW MORE ORDERS</button>
-            </a>
+          <aside class="b-r">
+            <h3 class="b-b">Overview</h3>
+            <ul class="b-b">
+              <h4>Orders</h4>
+              <li>
+                <a href="/pages/account-orders.html" class="text-icon-hover__effect"> Order History </a>
+              </li>
+            </ul>
+            <ul>
+              <h4>Account</h4>
+              <li>
+                <a href="/pages/account.html" class="text-icon-hover__effect"> Profile </a>
+              </li>
+              <li>
+                <a class="Secondary"> Addresses </a>
+              </li>
+              <li>
+                <a href="/pages/account-cards.html" class="text-icon-hover__effect"> Saved Cards </a>
+              </li>
+              <li>
+                <a class="text-icon-hover__effect"> Wishlists </a>
+              </li>
+            </ul>
+          </aside>
+          <div id="main-section">
+            <div class="addresses-wrapper">
+              <h1>ADDRESSES</h1>
+              <div class="address-wrapper row b-b">
+                <address>
+                  Mostafa Elhussainy<br />
+                  11126 McCormick Road<br />
+                  Baltimore, 21031<br />
+                  Alabama, United States<br />
+                  6303548008
+                </address>
+                <div class="col">
+                  <button class="button--secondary button--regular">DEFAULT</button>
+                  <button class="button--secondary--ghost button--regular">EDIT</button>
+                </div>
+              </div>
+              <div class="address-wrapper row b-b">
+                <address>
+                  Mostafa Elhussainy<br />
+                  11126 McCormick Road<br />
+                  Baltimore, 21031<br />
+                  Alabama, United States<br />
+                  6303548008
+                </address>
+                <div class="col">
+                  <button class="button--secondary--ghost button--regular">MAKE DEFAULT BILLING</button
+                  ><button class="button--secondary--ghost button--regular">MAKE DEFAULT SHIPPING</button>
+                  <button class="button--secondary--ghost button--regular">EDIT</button>
+                  <button class="button--secondary--ghost button--regular">DELETE</button>
+                </div>
+              </div>
+              <button class="button--secondary button--regular" id="add-new-address">ADD NEW ADDRESS</button>
+            </div>
+            <form class="edit-address none">
+              <h1>PROFILE</h1>
+              <div class="row">
+                <label>
+                  First name
+                  <input type="text" required pattern="^[a-zA-Z\s]{2,}$" />
+                  <p class="invalid">The input value is shorter than 2 characters</p>
+                </label>
+                <label>
+                  Last name
+                  <input type="text" required pattern="^[a-zA-Z\s]{2,}$" />
+                  <p class="invalid">The input value is shorter than 2 characters</p>
+                </label>
+              </div>
+              <div class="row">
+                <label>
+                  Address line 1
+                  <input type="text" required />
+                  <p class="invalid">This is a required field</p>
+                </label>
+                <label>
+                  Address line 2 (optional)
+                  <input type="text" />
+                </label>
+              </div>
+              <div class="row">
+                <label>
+                  Country
+                  <select select="country" aim="billing"></select>
+                </label>
+                <label>
+                  City
+                  <input type="text" required />
+                  <p class="invalid">This is a required field</p>
+                </label>
+              </div>
+              <div class="row">
+                <label>
+                  State
+                  <select select="province" target="billing"></select>
+                </label>
+                <label>
+                  Zip/postal code
+                  <input type="text" required />
+                  <p class="invalid">This is a required field</p>
+                </label>
+              </div>
+              <label>
+                Phone
+                <input type="tel" required />
+                <p class="invalid">Type only numbers</p>
+              </label>
+              <div class="row buttons-row">
+                <button class="button--regular button--secondary" type="submit">ADD</button>
+                <button id="cancel" class="button--regular button--secondary--ghost" type="button">CANCEL</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -562,6 +679,23 @@
       </div>
     </footer>
     <!-- F O O T E R    E N D -->
+    <script>
+      const addNewAddressBtn = document.getElementById('add-new-address');
+      const cancelBtn = document.getElementById('cancel');
+      const addAddressForm = document.querySelector('.edit-address');
+      const addressesWrapper = document.querySelector('.addresses-wrapper');
+
+      addNewAddressBtn.addEventListener('click', () => {
+        addAddressForm.classList.remove('none');
+        addressesWrapper.classList.add('none');
+      });
+      cancelBtn.addEventListener('click', () => {
+        addAddressForm.classList.add('none');
+        addressesWrapper.classList.remove('none');
+      });
+    </script>
+    <script src="../assets/JS/tools/select-country-province.js"></script>
+    <script src="../assets/JS/tools/error-msg.js"></script>
     <script src="../assets/JS/UI-components/dropdown.js"></script>
     <script src="../assets/JS/UI-components/header.js"></script>
   </body>
