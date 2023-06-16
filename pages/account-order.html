@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Pro Lighting</title>
     <link rel="stylesheet" href="../assets/scss/global.css" />
-    <link rel="stylesheet" href="../assets/scss/5-pages/account-orders/account-orders.css" />
+    <link rel="stylesheet" href="../assets/scss/5-pages/account-order/account-order.css" />
     <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon" />
   </head>
 
@@ -386,137 +386,108 @@
             </ul>
           </aside>
           <section id="main-section">
-            <h1>ORDER HISTORY</h1>
-            <div class="orders-wrapper col">
-              <div class="order b">
-                <div class="order__heading row">
-                  <label>
-                    ORDER DATE
-                    <span> Jun 15, 2023 </span>
-                  </label>
-                  <label>
-                    TOTAL
-                    <span> $351.99 </span>
-                  </label>
-                  <label>
-                    SHIP TO
-                    <span> Alexandria, Egypt </span>
-                  </label>
-                  <label>
-                    ORDER # 45865
-                    <a href="./account-order.html" class="Secondary"> Order details </a>
-                  </label>
-                </div>
-                <div class="order__row row">
-                  <div class="order__wrapper">
-                    <span class="order__status processing">
-                      Processing
-                      <i></i>
-                    </span>
-                    <figure>
-                      <img src="../assets/images/category/category__product--1.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                    <figure>
-                      <img src="../assets/images/category/category__product--3.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <button class="button--regular button--secondary--ghost re-order-btn">RE-ORDER</button>
-                </div>
-              </div>
-              <div class="order b">
-                <div class="order__heading row">
-                  <label>
-                    ORDER DATE
-                    <span> Jun 15, 2023 </span>
-                  </label>
-                  <label>
-                    TOTAL
-                    <span> $351.99 </span>
-                  </label>
-                  <label>
-                    SHIP TO
-                    <span> Alexandria, Egypt </span>
-                  </label>
-                  <label>
-                    ORDER # 45865
-                    <a href="./account-order.html" class="Secondary"> Order details </a>
-                  </label>
-                </div>
-                <div class="order__row row">
-                  <div class="order__wrapper">
-                    <span class="order__status refunded">
-                      Refunded
-                      <i></i>
-                    </span>
-                    <figure>
-                      <img src="../assets/images/category/category__product--4.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <button class="button--regular button--secondary--ghost re-order-btn">RE-ORDER</button>
-                </div>
-              </div>
-              <div class="order b">
-                <div class="order__heading row">
-                  <label>
-                    ORDER DATE
-                    <span> Jun 15, 2023 </span>
-                  </label>
-                  <label>
-                    TOTAL
-                    <span> $351.99 </span>
-                  </label>
-                  <label>
-                    SHIP TO
-                    <span> Alexandria, Egypt </span>
-                  </label>
-                  <label>
-                    ORDER # 45865
-                    <a href="./account-order.html" class="Secondary"> Order details </a>
-                  </label>
-                </div>
-                <div class="order__row row">
-                  <div class="order__wrapper">
-                    <span class="order__status fullfilled">
-                      Fulfilled
-                      <i></i>
-                    </span>
-                    <figure>
-                      <img src="../assets/images/category/category__product--4.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <button class="button--regular button--secondary--ghost re-order-btn">RE-ORDER</button>
-                </div>
-              </div>
-              <span class="page-status"> 1-2 of 2 </span>
+            <div class="details">
+              <label>
+                Order date:
+                <span>Jun 15, 2023 </span>
+              </label>
+              <label>
+                Ship to:
+                <span>Alexandria, Egypt</span>
+              </label>
+              <label>
+                Billed to:
+                <span>Mostafa Elhussainy</span>
+              </label>
+              <label>
+                Payment method:
+                <span>visa ending in 1111</span>
+              </label>
+              <label>
+                Shipping method:
+                <span>Fedex Ground Home Delivery </span>
+              </label>
             </div>
+            <h2>Products</h2>
+            <table class="b">
+              <thead>
+                <tr>
+                  <th>ITEM</th>
+                  <th></th>
+                  <th>PRICE</th>
+                  <th>QUANTITY</th>
+                  <th>TOTAL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="../assets/images/cart/cart__product-1.jpg" alt="product image" />
+                  </td>
+                  <td>
+                    <a href="../pages/product.html"> Low Voltage Landscape Light Mushroom - BPL301-Rust </a>
+                    <span class="variant"> Bulbs: No Additional Bulbs Wire </span>
+                    <span class="variant"> Nuts: 2 Waterproof Wire Nuts </span>
+                  </td>
+                  <td>$15.50</td>
+                  <td>1</td>
+                  <td>$31.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/cart/cart__product-2.jpg" alt="product image" />
+                  </td>
+                  <td>
+                    <a href="../pages/product.html">
+                      LED Low Voltage Landscape Light 3 Tier Pagoda - BPL302 - in Rust
+                    </a>
+                    <span class="variant"> Bulbs: No Additional Bulbs Wire </span>
+                    <span class="variant"> Nuts: 2 Waterproof Wire Nuts </span>
+                  </td>
+                  <td>$27.80</td>
+                  <td>1</td>
+                  <td>$27.80</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">Subtotal:</td>
+                  <td>$58.80</td>
+                </tr>
+                <tr>
+                  <td colspan="4">Shipping fedex Ground Home Delivery:</td>
+                  <td>$00.00</td>
+                </tr>
+                <tr>
+                  <td colspan="4">Order total:</td>
+                  <td>$58.80</td>
+                </tr>
+              </tfoot>
+            </table>
+            <h2>Order Status History</h2>
+            <table class="b">
+              <thead>
+                <tr>
+                  <th>DATE</th>
+                  <th>STATUS</th>
+                  <th>NOTES</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jun 15, 2023</td>
+                  <td>Processing</td>
+                  <td>
+                    Transaction ID:9G714762PT0483648<br />
+                    Payment Type: PayPal Website Pro<br />
+                    Timestamp: 2023-06-15 02:38:14<br />
+                    Payment Status: Authorize<br />
+                    Amount: 89.40 USD<br />
+                    Order has been Authorized. Waiting to be settled.<br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </div>
       </div>

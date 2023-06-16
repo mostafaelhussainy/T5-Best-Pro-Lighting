@@ -1,0 +1,160 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+/* M A I N    S T Y L E */
+#main-section .orders-wrapper {
+  row-gap: 24px;
+  margin-bottom: 60px;
+}
+#main-section .orders-wrapper .order__row {
+  align-items: center;
+}
+@media (max-width: 576px) {
+  #main-section .orders-wrapper .order__row {
+    flex-direction: column-reverse;
+    row-gap: 15px;
+  }
+}
+#main-section .orders-wrapper .order__row .re-order-btn {
+  display: block;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 14px !important;
+  padding: 5px 0;
+  width: 190px;
+}
+@media (max-width: 576px) {
+  #main-section .orders-wrapper .order__row .re-order-btn {
+    width: 100%;
+  }
+}
+#main-section .orders-wrapper .order__heading {
+  background-color: #f2f5f9;
+  padding: 12px 24px;
+  -moz-column-gap: 60px !important;
+       column-gap: 60px !important;
+}
+@media (max-width: 576px) {
+  #main-section .orders-wrapper .order__heading {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+#main-section .orders-wrapper .order__heading label {
+  color: #253241;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 18px !important;
+  margin: 0 !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+#main-section .orders-wrapper .order__heading label span,
+#main-section .orders-wrapper .order__heading label a {
+  font-size: 14px !important;
+}
+#main-section .orders-wrapper .order__heading label a:hover {
+  text-decoration: underline;
+}
+#main-section .orders-wrapper .order__heading label:last-of-type {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+@media (max-width: 576px) {
+  #main-section .orders-wrapper .order__heading label:last-of-type {
+    margin-left: 0 !important;
+  }
+}
+#main-section .orders-wrapper .order__row {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  padding: 24px;
+}
+#main-section .orders-wrapper .order__status {
+  color: #253241;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 10px;
+}
+#main-section .orders-wrapper .order__status i {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+}
+#main-section .orders-wrapper .order__status i::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 8px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  bottom: 0;
+  left: 0;
+}
+#main-section .orders-wrapper .order__status.processing i::after {
+  background-color: #85b040;
+  width: 33.33%;
+}
+#main-section .orders-wrapper .order__status.refunded i::after {
+  background-color: grey;
+  border-radius: 4px;
+  width: 100%;
+}
+#main-section .orders-wrapper .order__status.fulfilled i::after {
+  background-color: green;
+  border-radius: 4px;
+  width: 100%;
+}
+#main-section .orders-wrapper .order figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: unset;
+}
+#main-section .orders-wrapper .order figure img {
+  height: auto;
+  max-height: 100%;
+  max-width: 120px;
+  display: block;
+}
+#main-section .orders-wrapper .order figure a {
+  font-size: 18px;
+}
+#main-section .orders-wrapper .order figure:nth-of-type(even) {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #e1e1e1;
+}
+#main-section .orders-wrapper .page-status {
+  color: #253241;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}/*# sourceMappingURL=account-orders.css.map */

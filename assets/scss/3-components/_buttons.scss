@@ -37,17 +37,17 @@ button {
 }
 
 .button--secondary--ghost {
-  border: 1px solid #f26d21;
-  color: #f26d21;
+  border: 1px solid #f26d21 !important;
+  color: #f26d21 !important;
   &:hover {
-    color: #d85d17;
+    color: #d85d17 !important;
   }
 }
 
 .button--primary--ghost {
-  border: 1px solid #253242;
+  border: 1px solid #253242 !important;
   color: #253242 !important;
   &:hover {
-    color: #192129;
+    color: #192129 !important;
   }
 }

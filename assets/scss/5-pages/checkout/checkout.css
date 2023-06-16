@@ -413,10 +413,10 @@ main .checkout-container .shopping-cart .row .col button:hover {
   text-decoration: underline;
 }
 
-.customer-new {
+.account {
   display: none;
 }
 
-.customer-logged {
+.customer-new {
   display: none;
 }/*# sourceMappingURL=checkout.css.map */

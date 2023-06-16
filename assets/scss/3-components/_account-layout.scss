@@ -1,6 +1,9 @@
 #account-layout {
   margin-bottom: 80px;
   .container {
+    @include respond-to(xxl) {
+      border: none !important;
+    }
     h2 {
       @include respond-to(xxl) {
         display: none;
@@ -15,12 +18,14 @@
       color: #253241;
     }
     .main-row {
+      /*BOX*/
+      padding: 30px;
       @include respond-to(xxl) {
         flex-direction: column;
         row-gap: 30px;
+        padding: 0;
       }
-      /*BOX*/
-      padding: 30px;
+
       ul {
         padding-bottom: 30px;
         margin-bottom: 30px;

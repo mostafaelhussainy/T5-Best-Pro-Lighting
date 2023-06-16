@@ -1,0 +1,194 @@
+/* I M P O R T E D   O N   E V E R Y   S C S S   F I L E */
+/*------  R E S P O N S I V E    L A Y O U T ------*/
+/* 
+  Must give the parent `display: flex; flex-wrap: wrap;`
+  this mixin will make cards width responsive and dynamic
+  !Important: give cards max-width if needed
+*/
+/*
+  Another way but by doing this to the parent using `grid`
+  !Important: give cards max-width if needed
+*/
+/* C O L O U R S */
+/* G L O B A L */
+/* S C R O L L    B A R */
+/* M A I N    S T Y L E */
+#main-section .details {
+  margin-bottom: 40px;
+}
+#main-section .details label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+  margin: 0 !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+#main-section .details label span {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #253241;
+}
+#main-section h2 {
+  padding: 0 !important;
+}
+#main-section table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  #main-section table:first-of-type thead {
+    display: none;
+  }
+}
+#main-section table:first-of-type thead tr th:nth-of-type(4) {
+  width: 1%;
+}
+#main-section table:first-of-type thead tr th:last-of-type {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  #main-section table:first-of-type thead tr th:nth-of-type(1) {
+    width: auto;
+  }
+  #main-section table:first-of-type thead tr th:nth-of-type(2) {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  #main-section table:first-of-type tbody tr {
+    position: relative;
+    display: block;
+    padding: 15px;
+    padding-left: 110px;
+  }
+}
+#main-section table:first-of-type tbody tr td:first-of-type {
+  width: 126px;
+}
+#main-section table:first-of-type tbody tr td:first-of-type img {
+  mix-blend-mode: darken;
+  height: auto;
+  max-height: 126px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 1124px) {
+  #main-section table:first-of-type tbody tr td:nth-of-type(2) {
+    width: 45%;
+  }
+}
+#main-section table:first-of-type tbody tr td:nth-of-type(2) span,
+#main-section table:first-of-type tbody tr td:nth-of-type(2) a {
+  display: block;
+  white-space: nowrap;
+}
+@media (max-width: 1440px) {
+  #main-section table:first-of-type tbody tr td:nth-of-type(2) span,
+  #main-section table:first-of-type tbody tr td:nth-of-type(2) a {
+    white-space: normal;
+  }
+}
+#main-section table:first-of-type tbody tr td:nth-of-type(4) {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #main-section table:first-of-type tbody tr td:nth-of-type(4) {
+    text-align: left;
+  }
+}
+#main-section table:first-of-type tbody tr td:last-of-type {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  #main-section table:first-of-type tbody tr td:last-of-type {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #main-section table:first-of-type tbody tr td {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+  }
+  #main-section table:first-of-type tbody tr td * {
+    font-size: 14px;
+  }
+  #main-section table:first-of-type tbody tr td:first-of-type {
+    left: 15px;
+    position: absolute;
+    padding: 0;
+    visibility: visible;
+    width: 75px;
+  }
+}
+@media (max-width: 768px) {
+  #main-section table:first-of-type tfoot {
+    display: table;
+    width: 100%;
+  }
+}
+#main-section table:last-of-type {
+  margin-bottom: 0;
+}
+#main-section table:last-of-type thead tr th:last-of-type {
+  width: 50%;
+}
+@media (max-width: 576px) {
+  #main-section table:last-of-type thead tr th:last-of-type {
+    width: auto;
+  }
+}
+#main-section table thead {
+  background: #f2f5f9;
+}
+#main-section table thead tr th {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 9px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+@media (max-width: 1440px) {
+  #main-section table thead tr th:nth-of-type(1) {
+    width: 15%;
+  }
+  #main-section table thead tr th:nth-of-type(2) {
+    width: 50%;
+  }
+}
+#main-section table tbody tr:nth-of-type(even) {
+  background: #f2f5f9;
+}
+#main-section table tbody tr td {
+  padding: 20px 15px;
+  font-size: 16px;
+}
+#main-section table tbody tr td * {
+  font-size: 16px;
+}
+#main-section table tfoot tr td {
+  text-align: right;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+#main-section table tfoot tr:first-of-type td {
+  padding-top: 20px;
+}
+#main-section table tfoot tr:last-of-type td {
+  padding-bottom: 20px;
+  width: 15%;
+}/*# sourceMappingURL=account-order.css.map */

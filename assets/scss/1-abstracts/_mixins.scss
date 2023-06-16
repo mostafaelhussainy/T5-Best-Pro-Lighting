@@ -113,3 +113,9 @@
   grid-template-columns: repeat(#{$columns}, 1fr);
   column-gap: $gap;
 }
+
+@mixin rt($parent) {
+  @at-root #{$parent} & {
+    @content;
+  }
+}

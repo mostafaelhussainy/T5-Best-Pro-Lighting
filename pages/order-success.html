@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Pro Lighting</title>
     <link rel="stylesheet" href="../assets/scss/global.css" />
-    <link rel="stylesheet" href="../assets/scss/5-pages/account-orders/account-orders.css" />
+    <link rel="stylesheet" href="../assets/scss/5-pages/order-success/order-success.css" />
     <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon" />
   </head>
-
   <body>
     <!-- H E A D E R    S T A R T -->
     <header id="header__main">
@@ -316,212 +315,137 @@
           <h5 class="text-icon-hover__effect">HOME</h5>
         </a>
         <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
-        <a href="/pages/account.html">
-          <h5 class="text-icon-hover__effect">ACCOUNT</h5>
-        </a>
-        <img src="../assets/icons/bread-cumb.svg" alt="two arrows to the left" />
-        <a href="/">
-          <h5 class="active">ORDER HISTORY</h5>
-        </a>
+        <h5 class="Secondary">CHECKOUT</h5>
       </div>
     </section>
     <!-- B R E A D    C R U M B    E N D -->
 
-    <!-- M A I N    L A Y O U T    S T A R T -->
-    <main id="account-layout">
+    <!-- T H A N K S    M E S S A G E    S T A R T -->
+    <section id="thanks-msg">
+      <div class="container">
+        <p>
+          Thank you, <span> Mostafa Elhussainy</span>!<br />
+          A receipt has been sent to <a href="mailto:mostafa@numinix.com" class="Secondary">mostafa@numinix.com</a>. If
+          you did not receive the email, please check your program’s filters and make sure
+          <a href="mailto:sales@bestprolighting.com" class="Secondary">sales@bestprolighting.com</a> is in your safe
+          list.<br />
+          We will ship your order within 24 hours of receipt. We will do our best to ship orders placed before 2:00 PM
+          (PST) on the same day. Orders placed after 2:00 PM (PST) on Friday will ship on Monday.
+        </p>
+      </div>
+    </section>
+    <!-- T H A N K S    M E S S A G E    E N D -->
+
+    <!-- M A I N    S T A R T -->
+    <main id="myMain">
       <div class="container b">
-        <h2 class="b-b">ACCOUNT</h2>
-        <div class="main-row row">
-          <div class="dropdown-parent">
-            <span class="dropdown-btn b-b" data-dropdown="account-menu-dropdown">
-              ACCOUNT MENU
-              <img src="../assets/icons/account__dropdown-arrow.svg" id="icon-account-menu-dropdown" />
-            </span>
-            <div class="dropdown-wrapper" id="dropdown-account-menu-dropdown">
-              <ul class="b-b">
-                <h4>Orders</h4>
-                <li>
-                  <a href="/pages/account-orders.html" class="Secondary"> Order History </a>
-                </li>
-              </ul>
-              <ul>
-                <h4>Account</h4>
-                <li>
-                  <a href="/pages/account-profile.html" class="text-icon-hover__effect"> Profile </a>
-                </li>
-                <li>
-                  <a href="/pages/account-addresses.html" class="text-icon-hover__effect"> Addresses </a>
-                </li>
-                <li>
-                  <a href="/pages/account-cards.html" class="text-icon-hover__effect"> Saved Cards </a>
-                </li>
-                <li>
-                  <a class="text-icon-hover__effect"> Wishlists </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <aside class="b-r">
-            <h3 class="b-b">Overview</h3>
-            <ul class="b-b">
-              <h4>Orders</h4>
-              <li>
-                <a class="Secondary"> Order History </a>
-              </li>
-            </ul>
-            <ul>
-              <h4>Account</h4>
-              <li>
-                <a href="/pages/account-profile.html" class="text-icon-hover__effect"> Profile </a>
-              </li>
-              <li>
-                <a href="/pages/account-addresses.html" class="text-icon-hover__effect"> Addresses </a>
-              </li>
-              <li>
-                <a href="/pages/account-cards.html" class="text-icon-hover__effect"> Saved Cards </a>
-              </li>
-              <li>
-                <a class="text-icon-hover__effect"> Wishlists </a>
-              </li>
-            </ul>
-          </aside>
-          <section id="main-section">
-            <h1>ORDER HISTORY</h1>
-            <div class="orders-wrapper col">
-              <div class="order b">
-                <div class="order__heading row">
-                  <label>
-                    ORDER DATE
-                    <span> Jun 15, 2023 </span>
-                  </label>
-                  <label>
-                    TOTAL
-                    <span> $351.99 </span>
-                  </label>
-                  <label>
-                    SHIP TO
-                    <span> Alexandria, Egypt </span>
-                  </label>
-                  <label>
-                    ORDER # 45865
-                    <a href="./account-order.html" class="Secondary"> Order details </a>
-                  </label>
-                </div>
-                <div class="order__row row">
-                  <div class="order__wrapper">
-                    <span class="order__status processing">
-                      Processing
-                      <i></i>
-                    </span>
-                    <figure>
-                      <img src="../assets/images/category/category__product--1.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                    <figure>
-                      <img src="../assets/images/category/category__product--3.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <button class="button--regular button--secondary--ghost re-order-btn">RE-ORDER</button>
-                </div>
-              </div>
-              <div class="order b">
-                <div class="order__heading row">
-                  <label>
-                    ORDER DATE
-                    <span> Jun 15, 2023 </span>
-                  </label>
-                  <label>
-                    TOTAL
-                    <span> $351.99 </span>
-                  </label>
-                  <label>
-                    SHIP TO
-                    <span> Alexandria, Egypt </span>
-                  </label>
-                  <label>
-                    ORDER # 45865
-                    <a href="./account-order.html" class="Secondary"> Order details </a>
-                  </label>
-                </div>
-                <div class="order__row row">
-                  <div class="order__wrapper">
-                    <span class="order__status refunded">
-                      Refunded
-                      <i></i>
-                    </span>
-                    <figure>
-                      <img src="../assets/images/category/category__product--4.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <button class="button--regular button--secondary--ghost re-order-btn">RE-ORDER</button>
-                </div>
-              </div>
-              <div class="order b">
-                <div class="order__heading row">
-                  <label>
-                    ORDER DATE
-                    <span> Jun 15, 2023 </span>
-                  </label>
-                  <label>
-                    TOTAL
-                    <span> $351.99 </span>
-                  </label>
-                  <label>
-                    SHIP TO
-                    <span> Alexandria, Egypt </span>
-                  </label>
-                  <label>
-                    ORDER # 45865
-                    <a href="./account-order.html" class="Secondary"> Order details </a>
-                  </label>
-                </div>
-                <div class="order__row row">
-                  <div class="order__wrapper">
-                    <span class="order__status fullfilled">
-                      Fulfilled
-                      <i></i>
-                    </span>
-                    <figure>
-                      <img src="../assets/images/category/category__product--4.png" alt="product image" />
-                      <figcaption>
-                        <a href="" class="Secondary"> INTEGRATED 20W LED LOW VOLTAGE FLOOD LIGHT </a><br />
-                        Item #: 81<br />
-                        Model: BPL100-LED20W<br />
-                        Price: 29.99<br />
-                        Qty: 1
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <button class="button--regular button--secondary--ghost re-order-btn">RE-ORDER</button>
-                </div>
-              </div>
-              <span class="page-status"> 1-2 of 2 </span>
-            </div>
-          </section>
+        <figure class="b-b">
+          <img src="../assets/images/header/header__logo.png" alt="best pro lighting logo" />
+        </figure>
+        <div class="row b-b">
+          <label>
+            Invoice
+            <span> 45865 </span>
+          </label>
+          <label>
+            Date
+            <span> 2023-06-15 04:58:34 </span>
+          </label>
         </div>
+        <div class="row b-b row--addresses">
+          <label>
+            Billed to:
+            <span>
+              Mostafa Elhussainy<br />
+              test street<br />
+              Edmonton<br />
+              Alberta, t6g2c7<br />
+              Canada<br />
+              mido@numinix.com
+            </span>
+          </label>
+          <label>
+            Shipped to:
+            <span>
+              Mostafa Elhussainy<br />
+              test street<br />
+              Edmonton<br />
+              Alberta, t6g2c7<br />
+              USA
+            </span>
+          </label>
+          <div class="col">
+            <label>
+              Payment Method:
+              <span> Saved Card Option </span>
+            </label>
+            <label>
+              Shipping Method:
+              <span> Free Shipping </span>
+            </label>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3" class="b-t b-l">ITEM</th>
+              <th class="b-t">PRICE</th>
+              <th class="b-t">QTY</th>
+              <th class="b-t b-r">TOTAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" class="b-l b-b">
+                <a href="" class="Secondary"> Integrated 20W LED Low Voltage Flood Light </a><br />
+                Model: BPL100-LED20W<br />
+                Wire Nuts: None
+              </td>
+              <td class="b-b">$29.99</td>
+              <td class="b-b">1</td>
+              <td class="b-r b-b">$29.99</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="b-l b-b">
+                <a href="" class="Secondary"> 6 Directional Bullet 4 Mushroom Path Light LED Kit Black Finish </a><br />
+                Model: KIT-3W-6-101BK-4-301BK-150W <br />
+              </td>
+              <td class="b-b">$322</td>
+              <td class="b-b">1</td>
+              <td class="b-r b-b">$322</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5" class="b-l">Subtotal:</td>
+              <td class="b-r">$351.99</td>
+            </tr>
+            <tr>
+              <td colspan="5" class="b-l">Shipping Free Shipping:</td>
+              <td class="b-r">$0.00</td>
+            </tr>
+            <tr>
+              <td colspan="5" class="b-b b-l">Total:</td>
+              <td class="b-b b-r">$351.99</td>
+            </tr>
+          </tfoot>
+        </table>
       </div>
     </main>
-    <!-- M A I N    L A Y O U T    E N D -->
+    <!-- M A I N    E N D -->
+    <!-- C O N T R O L S    S T A R T -->
+    <section id="controls">
+      <div class="container">
+        <button id="print-invoice" class="Secondary" onclick="printWindow()">Print invoice</button>
+        <div class="row">
+          <a href="/">
+            <button class="button--secondary button--regular">CONTINUE SHOPPING</button>
+            <button class="button--secondary--ghost button--regular">SIGN OUT</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- C O N T R O L S    E N D -->
 
     <!-- F O O T E R    S T A R T -->
     <footer id="footer__main">
@@ -721,7 +645,18 @@
       </div>
     </footer>
     <!-- F O O T E R    E N D -->
+    <script>
+      function printWindow() {
+        const printContent = document.getElementById('myMain').outerHTML;
+        const originalContent = document.body.innerHTML;
+        document.body.innerHTML = printContent;
+        window.print();
+        window.onafterprint = function () {
+          document.body.innerHTML = originalContents;
+        };
+        document.body.innerHTML = originalContents;
+      }
+    </script>
     <script src="../assets/JS/UI-components/dropdown.js"></script>
-    <script src="../assets/JS/UI-components/header.js"></script>
   </body>
 </html>
